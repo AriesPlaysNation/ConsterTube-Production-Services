@@ -36,6 +36,11 @@ function generatePlaceHolders()
     console.log("*5. Generate date = " + currentDate);
 }
 
+function productList()
+{
+
+}
+
 function init()
 {
     console.log("*2. Entering setUpPage -> Create event listeners && generatePlaceHolders");
