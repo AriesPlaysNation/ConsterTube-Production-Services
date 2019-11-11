@@ -1,0 +1,104 @@
+/* Author:          Brad Botteron
+   Date Written:    10/22/19
+   Desc:            Final Project Stylesheet
+ */
+
+body
+{
+
+}
+
+wrapper
+{
+    padding-top: 100px;
+    overflow: hidden;
+    display: block;
+    position: relative;
+    padding-bottom: 50px;
+    background-color: #676EFF;
+    margin: 5px;
+    border: 5px solid black;
+}
+
+#columns
+{
+    column-count: 2;
+    position: relative;
+    display: block;
+}
+
+footer
+{
+    display: block;
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    margin-top: 10px;
+}
+
+#logoAndName
+{
+    display: flex;
+}
+
+header
+{
+    background-color: #676EFF;
+    height: 23vh;
+    border: 5px solid black;
+    margin: 5px;
+}
+
+#topLogo
+{
+    cursor: pointer;
+    height: 170px;
+    width: auto;
+    margin: 20px 50px 0px 20px;
+}
+
+#topHeader
+{
+    font-size: 60px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#nav
+{
+    margin: -50px 100px 10px 0px;
+    display: flex;
+    position: center;
+    list-style: none;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+}
+
+a
+{
+    text-decoration: none;
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+a:link
+{
+    color: #ff00ff;
+}
+
+a:visited
+{
+    color: #ff00ff;
+}
+
+li
+{
+    margin: 10px;
+    display: inline-block;
+    padding-left: 13%;
+    font-size: 30px;
+    margin: 2px;
+    text-decoration: none;
+}
