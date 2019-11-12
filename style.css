@@ -34,6 +34,7 @@ footer
     position: absolute;
     width: 100%;
     margin-top: 10px;
+    color: white;
 }
 
 #logoAndName
@@ -105,7 +106,8 @@ li
 
 #advertisement
 {
-
+    margin-left: 20px;
+    margin-right: 20%;
 }
 
 #productLeft
@@ -118,7 +120,24 @@ li
 
 }
 
+#article
+{
+    columns: 3;
+}
 
+#advertImagePlaceholder
+{
+    border: solid 1px red;
+}
+
+#productListContent
+{
+    border: dotted 2px white;
+    height: 200px;
+    width: 60px;
+    margin-left: 0px;
+    padding-left: 0px;
+}
 
 
 
