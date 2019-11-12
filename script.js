@@ -37,14 +37,6 @@ function generatePlaceHolders()
         nav.appendChild(li);
     }
 
-    var play = document.getElementById("scrollBox");
-    play.innerHTML = "";
-    var index = 0;
-    for(var i = 0; i < 1000; i++)
-    {
-        play.innerHTML += (i + "\n");
-    }
-
     var dateContainer = document.getElementById("year");
     var currentDate = new Date().getFullYear();
     dateContainer.innerHTML = currentDate;

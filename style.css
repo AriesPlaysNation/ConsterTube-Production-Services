@@ -122,12 +122,13 @@ li
 
 #article
 {
-    columns: 3;
+    display: inline-flex;
 }
 
 #advertImagePlaceholder
 {
     border: solid 1px red;
+    display: flex;
 }
 
 #productListContent
@@ -142,7 +143,7 @@ li
 #scrollBox
 {
     height: 500px;
-    width: 500px;
+    width: 700px;
     border: solid 1px white;
     overflow: auto;
     background-color: azure;
