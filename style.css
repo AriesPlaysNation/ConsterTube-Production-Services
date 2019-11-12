@@ -117,7 +117,7 @@ li
 
 #productRight
 {
-
+    border: solid 1px white;
 }
 
 #article
@@ -137,6 +137,39 @@ li
     width: 60px;
     margin-left: 0px;
     padding-left: 0px;
+}
+
+#scrollBox
+{
+    height: 500px;
+    width: 500px;
+    border: solid 1px white;
+    overflow: auto;
+    background-color: azure;
+    margin: 20px;
+}
+
+::-webkit-scrollbar
+{
+    width: 12px;
+    height: 12px;
+}
+
+::-webkit-scrollbar-track
+{
+    border: 1px solid #ff00ff;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb
+{
+    background: #676EFF;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover
+{
+    background: #ff00ff;
 }
 
 
