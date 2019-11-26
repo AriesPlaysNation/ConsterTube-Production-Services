@@ -5,7 +5,7 @@
 
 var gallery = document.getElementById("gallery");
 var index = 1;
-var maxImages = 30;
+var maxImages = 10;
 
 function generatePictures()
 {
