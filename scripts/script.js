@@ -4,8 +4,8 @@
  */
 
 // Global Variables
-var pages = ["About", "Products", "Services", "News", "Gallery"];
-var linkPages = ["about.html", "products.html", "services.html", "news.html", "gallery.html"];
+var pages = ["Contact", "Products", "Services", "News", "Gallery"];
+var linkPages = ["contact.html", "products.html", "services.html", "news.html", "gallery.html"];
 var logoHome = document.getElementById("logoAndName");
 
 function createEventListeners()

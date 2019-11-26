@@ -68,7 +68,7 @@ header
 
 #nav
 {
-    margin: -50px 100px 10px 0px;
+    margin: -100px 100px 10px 200px;
     display: flex;
     position: center;
     list-style: none;
@@ -97,11 +97,9 @@ a:visited
 
 li
 {
-    margin: 10px;
+    margin: 50px;
     display: inline-block;
-    padding-left: 13%;
     font-size: 30px;
-    margin: 2px;
     text-decoration: none;
 }
 
@@ -114,6 +112,11 @@ li
 #productLeft
 {
 
+}
+
+p
+{
+    margin: 20px;
 }
 
 #productRight
