@@ -189,6 +189,11 @@ p
 #formDetails
 {
     margin: 30px;
+    margin-left: 35vw;
+    padding: 20px;
+    width: 500px;
+    vertical-align: center;
+    border: solid 2px white;
 }
 
 .form
@@ -215,7 +220,7 @@ p
 
 #submitBtn
 {
-    margin-left: 120px;
+    margin-left: 10vw;
     font-weight: bold;
     font-size: large;
 }
