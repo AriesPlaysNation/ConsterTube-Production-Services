@@ -28,6 +28,18 @@ wrapper
     display: block;
 }
 
+#donateHome
+{
+    margin-left: 100px;
+    width: 300px;
+    height: auto;
+}
+
+.pBesidePic
+{
+    margin-left: 100px;
+}
+
 footer
 {
     display: block;
