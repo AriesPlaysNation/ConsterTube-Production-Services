@@ -14,14 +14,28 @@
 </header>
 <wrapper>
 
-    <form name="myForm" action="formSubmission.php" method="post">
+    <form id="formDetails" name="myForm" action="formSubmission.php" method="post">
+        <h2 id="enterInfo">Enter Your Information:</h2>
 
+        <label class="form">Name:</label>
+        <input id="nameInput" class="forminput" type="text" name="username" placeholder="John Doe" required /><br>
+
+        <label class="form">E-mail Address:</label>
+        <input id="emailInput" class="forminput" type="email" name="emailAddress" placeholder="JohnDoe@domain.com" required /><br>
+
+        <label class="form">Mobile Number:(With dashes and no Spaces)</label>
+        <input id="telephoneInput" class="forminput" type="tel" name="telephone" placeholder="555-555-5555" required />
+
+        <p id="errorMsg"></p>
+
+        <input type="button" value="Submit" class="form" id="submitBtn" />
     </form>
 
     <footer>
         &copy; 2019 - <span id="year">year</span> ConsterTube Production Services
     </footer>
 </wrapper>
-<script src="script.js"></script>
+<script src="scripts/script.js"></script>
+<script src="scripts/validateForm.js"></script>
 </body>
 </html>
