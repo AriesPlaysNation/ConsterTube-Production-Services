@@ -17,6 +17,7 @@ function generatePictures()
         image.style.border = "solid 1px white";
         image.style.margin = "10px";
         image.style.height = "200px";
+        image.alt = "Gallery Image: #" + index;
 
         gallery.appendChild(image);
     }
