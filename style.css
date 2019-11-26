@@ -103,6 +103,13 @@ li
     text-decoration: none;
 }
 
+#gallery
+{
+    margin: 10px;
+    border: solid 1px white;
+    display: inline-block;
+}
+
 #advertisement
 {
     margin-left: 20px;
