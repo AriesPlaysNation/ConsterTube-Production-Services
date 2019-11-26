@@ -3,11 +3,19 @@
    Description:     Gallery Script JavaScript
  */
 
-
+var gallery = document.getElementById("gallery");
+var index = 1;
+var maxImages = 30;
 
 function generatePictures()
 {
+    for(var i = 0; i < maxImages; i++)
+    {
+        var image = document.createElement("img");
 
+
+        gallery.appendChild(image);
+    }
 }
 
 function init()
