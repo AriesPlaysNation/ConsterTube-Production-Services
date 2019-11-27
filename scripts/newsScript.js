@@ -3,8 +3,8 @@
    Description:     News script -> JavaScript <-
  */
 
-var feed = document.getElementById("facebookFeed");
 
+var feed = document.getElementById("facebookFeed");
 
 
 function generateFeed()
