@@ -2,5 +2,4 @@
 Commercial website for ConsterTube Production Services <hr/>
 
 <img src="https://github.com/AriesPlaysNation/ConsterTube-Production-Services/blob/master/img/logoFinal.png" />
-<hr/>
-</p>
+<hr/></p>
