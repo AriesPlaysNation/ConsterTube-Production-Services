@@ -15,7 +15,7 @@ var productImages = document.getElementById("products");
 function productList()
 {
     console.log("*6. Entering productList()");
-    var ul = document.createElement("ul");
+    /*var ul = document.createElement("ul");
     var ulSizes = document.createElement("ul");
     for(var i = 0; i < products.length; i++)
     {
@@ -36,7 +36,10 @@ function productList()
         }
     }
     ul.id = "productListContent";
-    productLeft.appendChild(ul);
+    productLeft.appendChild(ul);*/
+    /*
+    * Decided to hard code to get a neater look
+     */
 }
 
 function generateProductsPlaceholder()

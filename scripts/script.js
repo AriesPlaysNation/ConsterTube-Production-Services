@@ -27,6 +27,7 @@ function generatePlaceHolders()
         var pageText = document.createTextNode(pages[i]);
         a.href = linkPages[i];
         a.id = pages[i];
+        li.id = "navList";
         console.log(a.id + "");
         a.appendChild(pageText);
         li.appendChild(a);

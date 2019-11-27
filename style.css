@@ -111,10 +111,22 @@ a:visited
 
 li
 {
-    margin: 50px;
-    display: inline-block;
+    display: block;
+    margin: 10px;
     font-size: 30px;
     text-decoration: none;
+}
+
+.smallLi
+{
+    font-size: .8em;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#navList
+{
+    margin: 50px;
 }
 
 #gallery
@@ -127,12 +139,12 @@ li
 #advertisement
 {
     margin-left: 20px;
-    margin-right: 20%;
+    margin-right: 20px;
 }
 
 #productLeft
 {
-
+    width: 20%;
 }
 
 p
