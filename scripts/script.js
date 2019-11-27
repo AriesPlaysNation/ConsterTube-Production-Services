@@ -11,7 +11,6 @@ var logoHome = document.getElementById("logoAndName");
 function createEventListeners()
 {
     console.log("*3. entering createEventListeners");
-
 }
 
 
@@ -40,11 +39,17 @@ function generatePlaceHolders()
     console.log("*5. Generate date = " + currentDate);
 }
 
+function createFaceBookFeed()
+{
+
+}
+
 function init()
 {
     console.log("*2. Entering setUpPage -> Create event listeners && generatePlaceHolders");
     createEventListeners();
     generatePlaceHolders();
+    createFaceBookFeed();
 }
 
 if(window.addEventListener)
