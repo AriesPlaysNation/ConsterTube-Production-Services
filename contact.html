@@ -17,6 +17,8 @@
     <form id="formDetails" name="myForm" action="formSubmission.php" method="post">
         <h2 id="enterInfo">Enter Your Information:</h2>
 
+        <p id="errorMsg"></p>
+
         <label class="form">Name:</label>
         <input id="nameInput" class="forminput" type="text" name="username" placeholder="John Doe" required /><br>
 
@@ -26,7 +28,7 @@
         <label class="form">Mobile Number:(With dashes and no Spaces)</label>
         <input id="telephoneInput" class="forminput" type="tel" name="telephone" placeholder="555-555-5555" required />
 
-        <p id="errorMsg"></p>
+
 
         <input type="button" value="Submit" class="form" id="submitBtn" />
     </form>

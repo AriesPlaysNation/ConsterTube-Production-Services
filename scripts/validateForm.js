@@ -55,16 +55,13 @@ function verifyName()
         if(/^[a-zA-Z]+$/.test(nameInput.value) === false)
         {
             throw "Name cannot contain numbers.";
-        } else {
-            nameInput.style.backgroundColor = "";
-            errorMsg.innerHTML = "";
-            errorMsg.display = "none";
         }
     } catch(msg)
     {
         formValidity = false;
-        errorMsg.display = "block";
-        errorMsg.style.color = "red";
+        errorMsg.style.display = "block";
+        errorMsg.style.color = "white";
+        errorMsg.style.textAlign = "center";
         errorMsg.innerHTML = msg;
         nameInput.style.backgroundColor = "rgb(255,233,233)";
         nameInput.focus();
@@ -82,16 +79,13 @@ function verifyEmail()
         if(emailCheck.test(emailInput.value) === false)
         {
             throw "Please provide a valid email.";
-        } else {
-            emailInput.style.backgroundColor = "";
-            errorMsg.innerHTML = "";
-            errorMsg.display = "none";
         }
     } catch(msg)
     {
         formValidity = false;
-        errorMsg.display = "block";
-        errorMsg.style.color = "red";
+        errorMsg.style.display = "block";
+        errorMsg.style.color = "white";
+        errorMsg.style.textAlign = "center";
         errorMsg.innerHTML = msg;
         emailInput.style.backgroundColor = "rgb(255,233,233)";
         emailInput.focus();
@@ -110,16 +104,13 @@ function verifyTelephone()
         {
             console.log("phone failed");
             throw "Enter a valid phone number. Example: 555-555-5555";
-        } else {
-            telephoneInput.style.backgroundColor = "";
-            errorMsg.innerHTML = "";
-            errorMsg.display = "none";
         }
     } catch(msg)
     {
         formValidity = false;
-        errorMsg.display = "block";
-        errorMsg.style.color = "red";
+        errorMsg.style.display = "block";
+        errorMsg.style.color = "white";
+        errorMsg.style.textAlign = "center";
         errorMsg.innerHTML = msg;
         telephoneInput.style.backgroundColor = "rgb(255,233,233)";
         telephoneInput.focus();
