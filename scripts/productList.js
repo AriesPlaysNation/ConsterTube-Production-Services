@@ -4,10 +4,12 @@
  */
 
 /* Product variables for page creation */
-var productLeft = document.getElementById("productLeft");
-var productRight = document.getElementById("productRight");
-var products = ["T-Shirt", "Hoodies"];
-var sizes = ["SM", "M", "L", "XL", "XXL", "XXXL"];
+/*var productLeft = document.getElementById("productLeft");
+var productRight = document.getElementById("productRight");*/
+/*Obsolete since hard coded! ^^^^^^^^^^^^^^^*/
+
+var products = ["Tshirt", "Hoodies"];
+var sizes = ["sm", "m", "l", "xl", "xxl", "xxxl"];
 var index = 1;
 var productImages = document.getElementById("products");
 
