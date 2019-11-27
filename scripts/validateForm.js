@@ -101,7 +101,7 @@ function verifyEmail()
 
 function verifyTelephone()
 {
-    var phoneRegex = /^(\([0-9]{3}\) |[0-9]{3}-)[0-9]{3}-[0-9]{4}/;
+    var phoneRegex = /^(1?(-?\d{3})-?)?(\d{3})(-?\d{4})$/;
     console.log("Entering verifyTelephone()");
     var telephoneInput = document.getElementById("telephoneInput");
     try
