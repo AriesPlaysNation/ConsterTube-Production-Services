@@ -13,7 +13,7 @@ mail($to, $email_subject, $email_body, $headers);
 <!doctype html> <!-- Brad Botteron -->
 <html lang="en"><!-- ConsterTube Production Services -->
 <head>
-    <title>Form Submission: Thank you, <?php echo $username ?>!</title>
+    <title>Form Submission</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="style.css" />
 </head>
@@ -26,7 +26,7 @@ mail($to, $email_subject, $email_body, $headers);
 </header>
 <wrapper style="text-align: center">
 
-    <h1>Thank you for submitting your information!</h1>
+    <h1>Thank you for submitting your information, <?php echo $username ?>!</h1>
     <h2>We will get back to you within 48 hours.</h2>
     <p>Look out in your inbox and text messages!</p>
 
