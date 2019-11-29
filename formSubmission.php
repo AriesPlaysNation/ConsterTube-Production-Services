@@ -1,6 +1,5 @@
 <?php
-
-$firstName       = $_POST["firstName"];
+$firstName      = $_POST["firstName"];
 $lastName       = $_POST["lastName"];
 $emailAddress   = $_POST["emailAddress"];
 $telephone      = $_POST["telephone"];
@@ -8,7 +7,7 @@ $telephone      = $_POST["telephone"];
 $to = "bradbotteron13@gmail.com, conster954@gmail.com";
 $headers = "From: Website Form ConsterTube Production Services";
 $email_subject = "New Form Submission";
-$email_body = "User: ".$firstName. " " .$lastName. " with the email: " .$emailAddress. " would like you to contact him at: " .$telephone. ".";
+$email_body = "User: ".$firstName. " " .$lastName. "-------Email: " .$emailAddress. "-------Phone=" .$telephone. ".";
 mail($to, $email_subject, $email_body, $headers);
 
 ?>
