@@ -49,8 +49,8 @@ function verifyForm(evt)
 
 function verifyFirstName()
 {
-    console.log("Entering verifyName()");
-    var nameInput = document.getElementById("firstNameInput");
+    console.log("Entering verifyFirstName()");
+    var firstNameInput = document.getElementById("firstNameInput");
     try
     {
         if(/^[a-zA-Z]+$/.test(firstNameInput.value) === false)
@@ -64,7 +64,7 @@ function verifyFirstName()
         errorMsg.style.color = "white";
         errorMsg.style.textAlign = "center";
         errorMsg.innerHTML = msg;
-        firstNameInput.style.backgroundColor = "rgb(255,233,233)";
+        firstNameInput.backgroundColor = "rgb(255,233,233)";
         firstNameInput.focus();
     }
     console.log(formValidity + ": in verifyFirstName");
@@ -72,8 +72,8 @@ function verifyFirstName()
 
 function verifyLastName()
 {
-    console.log("Entering verifyName()");
-    var nameInput = document.getElementById("lastNameInput");
+    console.log("Entering verifyLastName()");
+    var lastNameInput = document.getElementById("lastNameInput");
     try
     {
         if(/^[a-zA-Z]+$/.test(lastNameInput.value) === false)
