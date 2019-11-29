@@ -1,13 +1,14 @@
 <?php
 
-$username       = $_POST["username"];
+$firstName       = $_POST["firstName"];
+$lastName       = $_POST["lastName"];
 $emailAddress   = $_POST["emailAddress"];
 $telephone      = $_POST["telephone"];
 
 $to = "bradbotteron13@gmail.com, conster954@gmail.com";
 $headers = "From: Website Form ConsterTube Production Services";
 $email_subject = "New Form Submission";
-$email_body = "User: ".$username. " with the email: " .$emailAddress. " would like you to contact him at: " .$telephone. ".";
+$email_body = "User: ".$firstName. " " .$lastName. " with the email: " .$emailAddress. " would like you to contact him at: " .$telephone. ".";
 mail($to, $email_subject, $email_body, $headers);
 
 ?>
@@ -27,7 +28,7 @@ mail($to, $email_subject, $email_body, $headers);
 </header>
 <wrapper style="text-align: center">
 
-    <h1>Thank you for submitting your information, <?php echo $username ?>!</h1>
+    <h1>Thank you for submitting your information, <?php echo $firstName + " " +  $lastName ?>!</h1>
     <h2>We will get back to you within 48 hours.</h2>
     <p>Look out in your inbox and text messages!</p>
 
@@ -35,10 +36,12 @@ mail($to, $email_subject, $email_body, $headers);
         Add <a href="mailto: conster954@gmail.com" style="background-color: #676EFF">conster954@gmail.com</a> to your email contact list<br /><br /><br />
         Add <a href="mailto: bradbotteron13@gmail.com" style="background-color: #676EFF">bradbotteron13@gmail.com</a> to your email contact list<br /><br /><br />
         Verify all information below is correct<br /><br /><br />
-        <?php echo $username ?><br /><br /><br />
+    <p style="border: solid 1px white">
+        <?php echo $firstName + " " + $lastName ?><br /><br /><br />
         <?php echo $emailAddress ?><br /><br /><br />
         <?php echo $telephone ?><br /><br /><br />
-
+    </p>
+        
     <p>If any above information is incorrect please <a href="mailto: conster954@gmail.com">email me</a> directly!</p>
 
 

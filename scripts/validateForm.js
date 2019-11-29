@@ -32,7 +32,8 @@ function verifyForm(evt)
 
     formValidity = true;
     console.log(formValidity + ": intial formValidity");
-    verifyName();
+    verifyFirstName();
+    verifyLastName();
     verifyEmail();
     verifyTelephone();
     console.log(formValidity + ": formValidity");
@@ -46,15 +47,15 @@ function verifyForm(evt)
     }
 }
 
-function verifyName()
+function verifyFirstName()
 {
     console.log("Entering verifyName()");
     var nameInput = document.getElementById("nameInput");
     try
     {
-        if(/^[a-zA-Z]+$/.test(nameInput.value) === false)
+        if(/^[a-zA-Z]+$/.test(firstNameInput.value) === false)
         {
-            throw "Name cannot contain numbers.";
+            throw "First name cannot contain numbers.";
         }
     } catch(msg)
     {
@@ -63,10 +64,33 @@ function verifyName()
         errorMsg.style.color = "white";
         errorMsg.style.textAlign = "center";
         errorMsg.innerHTML = msg;
-        nameInput.style.backgroundColor = "rgb(255,233,233)";
-        nameInput.focus();
+        firstNameInput.style.backgroundColor = "rgb(255,233,233)";
+        firstNameInput.focus();
     }
-    console.log(formValidity + ": in verifyName");
+    console.log(formValidity + ": in verifyFirstName");
+}
+
+function verifyLastName()
+{
+    console.log("Entering verifyName()");
+    var nameInput = document.getElementById("nameInput");
+    try
+    {
+        if(/^[a-zA-Z]+$/.test(lastNameInput.value) === false)
+        {
+            throw "Last name cannot contain numbers.";
+        }
+    } catch(msg)
+    {
+        formValidity = false;
+        errorMsg.style.display = "block";
+        errorMsg.style.color = "white";
+        errorMsg.style.textAlign = "center";
+        errorMsg.innerHTML = msg;
+        lastNameInput.style.backgroundColor = "rgb(255,233,233)";
+        lastNameInput.focus();
+    }
+    console.log(formValidity + ": in verifyLastName");
 }
 
 function verifyEmail()
