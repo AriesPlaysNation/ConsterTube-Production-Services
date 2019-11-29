@@ -50,7 +50,7 @@ function verifyForm(evt)
 function verifyFirstName()
 {
     console.log("Entering verifyName()");
-    var nameInput = document.getElementById("nameInput");
+    var nameInput = document.getElementById("firstNameInput");
     try
     {
         if(/^[a-zA-Z]+$/.test(firstNameInput.value) === false)
@@ -73,7 +73,7 @@ function verifyFirstName()
 function verifyLastName()
 {
     console.log("Entering verifyName()");
-    var nameInput = document.getElementById("nameInput");
+    var nameInput = document.getElementById("lastNameInput");
     try
     {
         if(/^[a-zA-Z]+$/.test(lastNameInput.value) === false)

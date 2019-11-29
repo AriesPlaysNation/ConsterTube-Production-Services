@@ -41,7 +41,7 @@ mail($to, $email_subject, $email_body, $headers);
         <?php echo $emailAddress ?><br /><br /><br />
         <?php echo $telephone ?><br /><br /><br />
     </p>
-        
+
     <p>If any above information is incorrect please <a href="mailto: conster954@gmail.com">email me</a> directly!</p>
 
 
