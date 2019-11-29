@@ -28,7 +28,7 @@ mail($to, $email_subject, $email_body, $headers);
 </header>
 <wrapper style="text-align: center">
 
-    <h1>Thank you for submitting your information, <?php echo $firstName + " " +  $lastName ?>!</h1>
+    <h1>Thank you for submitting your information, <?php echo $firstName?> <?php echo $lastName?>!</h1>
     <h2>We will get back to you within 48 hours.</h2>
     <p>Look out in your inbox and text messages!</p>
 
@@ -37,7 +37,7 @@ mail($to, $email_subject, $email_body, $headers);
         Add <a href="mailto: bradbotteron13@gmail.com" style="background-color: #676EFF">bradbotteron13@gmail.com</a> to your email contact list<br /><br /><br />
         Verify all information below is correct<br /><br /><br />
     <p style="border: solid 1px white">
-        <?php echo $firstName + " " + $lastName ?><br /><br /><br />
+        <?php echo $firstName?> <?php echo $lastName?><br /><br /><br />
         <?php echo $emailAddress ?><br /><br /><br />
         <?php echo $telephone ?><br /><br /><br />
     </p>
