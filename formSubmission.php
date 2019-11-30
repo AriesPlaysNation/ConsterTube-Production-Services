@@ -4,7 +4,7 @@ $lastName       = $_POST["lastName"];
 $emailAddress   = $_POST["emailAddress"];
 $telephone      = $_POST["telephone"];
 
-$to = "bradbotteron13@gmail.com, conster954@gmail.com";
+$to = "bradbotteron13@gmail.com";
 $headers = "From: Website Form ConsterTube Production Services";
 $email_subject = "New Form Submission";
 $email_body = "User: ".$firstName. " " .$lastName. "-------Email: " .$emailAddress. "-------Phone=" .$telephone. ".";
