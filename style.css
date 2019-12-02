@@ -124,6 +124,9 @@ li
     font-size: .8em;
     text-decoration: underline;
     cursor: pointer;
+    border: dotted .5px #ff67f9;
+    text-align: center;
+    width: 75px;
 }
 
 #navList
@@ -142,11 +145,13 @@ li
 {
     margin-left: 20px;
     margin-right: 20px;
+    width: auto;
 }
 
 #productLeft
 {
-    width: 20%;
+    width: auto;
+    text-align: center;
 }
 
 p
@@ -158,6 +163,7 @@ p
 {
     border: solid 1px white;
     margin-left: 50px;
+    width: auto;
 }
 
 #article
@@ -184,7 +190,7 @@ p
 #scrollBox
 {
     height: 500px;
-    width: 1000px;
+    width: auto;
     border: solid 1px white;
     overflow: auto;
     background-color: azure;

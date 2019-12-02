@@ -8,40 +8,82 @@
 var productRight = document.getElementById("productRight");*/
 /*Obsolete since hard coded! ^^^^^^^^^^^^^^^*/
 
-var products = ["Tshirt", "Hoodies"];
-var sizes = ["sm", "m", "l", "xl", "xxl", "xxxl"];
+var products = ["T-Shirt", "Hoodies"];
+var shirtSizes = ["smShirt", "mShirt", "lShirt", "xlShirt", "xxlShirt", "xxxlShirt"];
+var hoodieSizes = ["smHoodie", "mHoodie", "lHoodie", "xlHoodie", "xxlHoodie", "xxxlHoodie"];
 var index = 1;
 var productImages = document.getElementById("products");
+
+var productLeft = document.getElementById("productLeft");
 
 
 function productList()
 {
     console.log("*6. Entering productList()");
-    /*var ul = document.createElement("ul");
-    var ulSizes = document.createElement("ul");
-    for(var i = 0; i < products.length; i++)
+    addTshirt();
+    addTshirtSizes();
+    addHoodie();
+    addHoodieSizes();
+}
+
+function addHoodie()
+{
+    productLeft.innerHTML += "<hr>";
+    var pre = document.createElement("pre");
+    var ul = document.createElement("ul");
+    var li = document.createElement("li");
+    var text = document.createTextNode(products[1]);
+    li.appendChild(text);
+    ul.appendChild(li);
+    pre.appendChild(ul);
+    productLeft.appendChild(pre);
+    productLeft.innerHTML += "<hr>";
+}
+
+function addHoodieSizes()
+{
+    var ul = document.createElement("ul");
+    for(var i = 0; i < hoodieSizes.length; i++)
     {
         var li = document.createElement("li");
-        li.style.fontSize = "1em";
-        li.style.color = "white";
-        li.id = products[i];
-        li.innerHTML = products[i];
+        var text = document.createTextNode(hoodieSizes[i]);
+        li.appendChild(text);
+        li.className = "smallLi";
+        li.id = shirtSizes[i];
         ul.appendChild(li);
-        for(var j = 0; j < sizes.length; j++)
-        {
-            var liSizes = document.createElement("li");
-            liSizes.style.fontSize = ".75em";
-            liSizes.style.color = "white";
-            liSizes.id = sizes[j];
-            liSizes.innerHTML = sizes[j];
-            ul.appendChild(liSizes);
-        }
+
     }
-    ul.id = "productListContent";
-    productLeft.appendChild(ul);*/
-    /*
-    * Decided to hard code to get a neater look
-     */
+    productLeft.appendChild(ul);
+}
+
+function addTshirt()
+{
+    productLeft.innerHTML += "<hr>";
+    var pre = document.createElement("pre");
+    var ul = document.createElement("ul");
+    var li = document.createElement("li");
+    var text = document.createTextNode(products[0]);
+    li.appendChild(text);
+    ul.appendChild(li);
+    pre.appendChild(ul);
+    productLeft.appendChild(pre);
+    productLeft.innerHTML += "<hr>";
+}
+
+function addTshirtSizes()
+{
+    var ul = document.createElement("ul");
+    for(var i = 0; i < shirtSizes.length; i++)
+    {
+        var li = document.createElement("li");
+        var text = document.createTextNode(shirtSizes[i]);
+        li.appendChild(text);
+        li.className = "smallLi";
+        li.id = shirtSizes[i];
+        ul.appendChild(li);
+
+    }
+    productLeft.appendChild(ul);
 }
 
 function generateProductsPlaceholder()
@@ -59,7 +101,7 @@ function generateProductsPlaceholder()
         product.src = "img/whiteMenTShirt.png";
         product.alt = "Product placeholder: " + index;
         product.style.width = "210px";
-        product.style.margin = "10px";
+        product.style.margin = "3%";
         product.style.border = "solid 1px black";
 
         productImages.appendChild(product);
