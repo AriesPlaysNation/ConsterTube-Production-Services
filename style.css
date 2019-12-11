@@ -8,6 +8,11 @@ body
 
 }
 
+#photoshop, #premiere
+{
+    cursor: pointer;
+}
+
 #seeMoreBtn
 {
     display: flex;

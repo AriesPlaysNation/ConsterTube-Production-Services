@@ -1,4 +1,7 @@
-
+/* Author:          Brad Botteron
+   Date Written:    12/10/2019
+   Description:     eventProducts javascript
+ */
 
 function createEventListenersProducts()
 {

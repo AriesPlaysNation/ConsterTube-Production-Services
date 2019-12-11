@@ -5,6 +5,7 @@
 
 
 var feed = document.getElementById("facebookFeed");
+var button = document.getElementById("refresh");
 
 
 function generateFeed()
@@ -20,17 +21,17 @@ function init()
 if(window.addEventListener)
 {
     window.addEventListener("load", init, false);
+    button.addEventListener("click", function() {
+        window.location.reload();
+    }, false);
+
 } else if (window.attachEvent)
 {
     window.attachEvent("onload", init);
+    button.addEventListener("click", function() {
+        window.location.reload();
+    });
 }
-
-
-
-
-
-
-
 
 
 
