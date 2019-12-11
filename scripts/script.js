@@ -3,6 +3,8 @@
    Description:     Final Project JavaScript
  */
 
+"use strict";
+
 // Global Variables
 var pages = ["Contact", "Products", "Services", "News", "Gallery"];
 var linkPages = ["contact.html", "products.html", "services.html", "news.html", "gallery.html"];

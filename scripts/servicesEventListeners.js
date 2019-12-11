@@ -2,6 +2,7 @@
    Date Written:    12/10/2019
    Description:     servicesEventListeners
  */
+"use strict";
 
 var photoshopDesc = "Placeholder for paragraph about photoshop services";
 var premiereDesc = "Placeholder for paragraph about premiere services";

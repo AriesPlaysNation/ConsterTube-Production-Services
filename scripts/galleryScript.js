@@ -3,6 +3,8 @@
    Description:     Gallery Script JavaScript
  */
 
+"use strict";
+
 var gallery = document.getElementById("gallery");
 var index = 1;
 var maxImages = 9;

@@ -3,6 +3,8 @@
    Description:     Form Validation script -> JavaScript <-
  */
 
+"use strict";
+
 var errorMsg = document.getElementById("errorMsg");
 var form = document.getElementsByTagName("form")[0];
 var formValidity;
@@ -31,7 +33,7 @@ function verifyForm(evt)
     }
 
     formValidity = true;
-    console.log(formValidity + ": intial formValidity");
+    console.log(formValidity + ": initial formValidity");
     verifyFirstName();
     verifyLastName();
     verifyEmail();
@@ -142,9 +144,35 @@ function verifyTelephone()
     console.log(formValidity + ": in verifyTelephone");
 }
 
+function writeCookies()
+{
+    var myPath = "/~bbottero";
+    var now = new Date();
+    var days = 7;
+    now.setTime(now.getTime() + (days * 86400000));
+    var expiry = now.toUTCString();
+    var firstName = encodeURIComponent(document.myForm.firstName.value);
+    var lastName = encodeURIComponent(document.myForm.lastName.value);
+    var emailAddress = encodeURIComponent(document.myForm.emailAddress.value);
+    var telephone = encodeURIComponent(document.myForm.telephone.value);
+
+    document.cookie = "firstName=" + firstName + "; ";
+    document.cookie = "lastName=" + lastName + "; ";
+    document.cookie = "emailAddress=" + emailAddress + "; ";
+    document.cookie = "telephone=" + telephone + "; ";
+    document.cookie = "expiry=" + expiry + "; ";
+    document.cookie = "path=" + myPath + "; ";
+
+    var logString = "firstName=" + firstName + "\nlastName=" + lastName;
+    logString += "\nemailAddress=" + emailAddress + "\ntelephone=" + telephone;
+    logString += "\nexpiry=" + expiry + "\npath=" + myPath;
+    console.log(logString);
+}
+
 function formInit()
 {
     formEventListeners();
+    writeCookies();
 }
 
 if(window.addEventListener)

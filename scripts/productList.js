@@ -3,6 +3,8 @@
    Description:     Product List script -> JavaScript <-
  */
 
+"use strict";
+
 /* Product variables for page creation */
 /*var productLeft = document.getElementById("productLeft");
 var productRight = document.getElementById("productRight");*/

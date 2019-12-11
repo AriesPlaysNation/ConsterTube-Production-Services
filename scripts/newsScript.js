@@ -3,6 +3,7 @@
    Description:     News script -> JavaScript <-
  */
 
+"use strict";
 
 var feed = document.getElementById("facebookFeed");
 var button = document.getElementById("refresh");

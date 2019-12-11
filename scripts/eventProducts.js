@@ -3,6 +3,8 @@
    Description:     eventProducts javascript
  */
 
+"use strict";
+
 function createEventListenersProducts()
 {
     for(var i = 0; i < shirtSizes.length; i++)
