@@ -8,6 +8,14 @@ body
 
 }
 
+#seeMoreBtn
+{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
 wrapper
 {
     padding-top: 10px;
