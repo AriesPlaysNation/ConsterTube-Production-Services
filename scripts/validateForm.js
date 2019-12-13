@@ -44,7 +44,9 @@ function verifyForm(evt)
         console.log("Entering formValidation True block");
         errorMsg.innerHTML = "";
         errorMsg.style.display = "none";
-        form.submit();
+        //form.submit();
+        writeCookies();
+        ajaxFunction();
         console.log("Form Submitted");
     }
 }
@@ -169,10 +171,49 @@ function writeCookies()
     console.log(logString);
 }
 
+function readCookies()
+{
+    var cookieArray = [];
+    var cookieKey = "";
+    var cookieValue = "";
+
+    var allCookies = document.cookie;
+    console.log(document.cookie);
+    console.log(allCookies.split("; "));
+    var cookieInfo = "All cookies: " + allCookies + "\n";
+    for(var i = 0; i < cookieArray.length; i++)
+    {
+        cookieKey = cookieArray[i].split("=")[0];
+        cookieValue = cookieArray[i].split("=")[1];
+        console.log("cookieKey: " + cookieKey);
+        console.log("cookieValue: " + cookieValue);
+        cookieInfo += "Key is: <b>" + cookieKey + "</b> and Value is: <b>" + cookieValue + "</b>";
+        switch (cookieKey)
+        {
+            case "firstName": var firstName = decodeURIComponent(cookieValue);
+            break;
+            case "lastName": var lastName = decodeURIComponent(cookieValue);
+            break;
+            case "emailAddress": var emailAddress = decodeURIComponent(emailAddress);
+            break;
+            case "telephone": var telephone = decodeURIComponent(telephone);
+            break;
+        }
+    }
+    var cookieElement = document.getElementById("firstNameInput");
+    cookieElement.innerHTML = firstName;
+    var cookieElement = document.getElementById("lastNameInput");
+    cookieElement.innerHTML = lastName;
+    var cookieElement = document.getElementById("emailInput");
+    cookieElement.innerHTML = emailAddress;
+    var cookieElement = document.getElementById("telephoneInput");
+    cookieElement.innerHTML = telephone;
+}
+
 function formInit()
 {
     formEventListeners();
-    writeCookies();
+    readCookies();
 }
 
 if(window.addEventListener)
