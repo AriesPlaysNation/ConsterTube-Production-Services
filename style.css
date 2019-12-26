@@ -14,6 +14,11 @@ body
     text-align: center;
 }
 
+#links
+{
+    display: flex;
+}
+
 #photoshop, #premiere
 {
     cursor: pointer;
