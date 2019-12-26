@@ -8,7 +8,8 @@
 var gallery = document.getElementById("gallery");
 var index = 1;
 var maxImages = 9;
-var button = document.getElementById("seeMoreBtn2");
+var moreButton = document.getElementById("seeMoreBtn2");
+var lessButton = document.getElementById("seeLessBtn");
 
 function generatePictures()
 {
@@ -40,6 +41,22 @@ function genMorePics()
 
         gallery.appendChild(image);
     }
+
+    if(lessButton.addEventListener)
+    {
+        lessButton.addEventListener("click", genLessPics, false);
+    } else if (lessButton.attachEvent)
+    {
+        lessButton.attachEvent("onclick", genLessPics);
+    }
+
+    moreButton.style.display = "none";
+    lessButton.style.display = "block";
+}
+
+function genLessPics()
+{
+    document.location.reload();
 }
 
 function init()
@@ -50,15 +67,9 @@ function init()
 if(window.addEventListener)
 {
     window.addEventListener("load", init, false);
-    button.addEventListener("click", genMorePics, false);
+    moreButton.addEventListener("click", genMorePics, false);
 } else if (window.attachEvent)
 {
     window.attachEvent("onload", init);
-    button.attachEvent("onclick", genMorePics);
+    moreButton.attachEvent("onclick", genMorePics);
 }
-
-
-
-
-
-
