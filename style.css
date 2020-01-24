@@ -81,6 +81,7 @@ wrapper
 {
     margin-left: 100px;
     columns: 3;
+    column-width: 100px;
 }
 
 footer
