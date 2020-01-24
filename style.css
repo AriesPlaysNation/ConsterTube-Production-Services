@@ -80,8 +80,6 @@ wrapper
 .pBesidePic
 {
     margin-left: 100px;
-    column-count: 2;
-    column-gap: 20px;
 }
 
 footer
