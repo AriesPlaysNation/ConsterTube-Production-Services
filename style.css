@@ -80,6 +80,7 @@ wrapper
 .pBesidePic
 {
     margin-left: 100px;
+    columns: 3;
 }
 
 footer
