@@ -8,6 +8,25 @@ body
 
 }
 
+#smallIcons
+{
+    display: inline;
+}
+
+.smallIconsImg
+{
+    width: auto;
+    height: 25px;
+    margin-top: 25px;
+    float: right;
+}
+
+.smallIconsLink
+{
+    margin-top: 25px;
+    float: right;
+}
+
 #personalInfo
 {
     padding-top: 25px;
