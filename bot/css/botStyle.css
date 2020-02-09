@@ -9,9 +9,30 @@
     font-family: "Lemonada", cursive;
 }
 
+#wrapper
+{
+    border: 1px solid white;
+    width: auto;
+}
+
+footer
+{
+    border: .5px solid white;
+    text-align: center;
+    font-size: .75em;
+    padding: 5px;
+    margin: 5px;
+    position: absolute;
+    bottom: 0;
+    width: 98%;
+    color: white;
+}
+
 #nav
 {
     border: .5px solid white;
+    padding: 5px;
+    margin: 5px;
 }
 
 a:link, a:visited, a:active, a:hover
@@ -23,5 +44,6 @@ a:link, a:visited, a:active, a:hover
 .navA
 {
     display: inline;
-    margin: 5%;
+    margin: 0 5%;
+
 }
