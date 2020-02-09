@@ -1,0 +1,9 @@
+@font-face {
+    font-family: Lemonada;
+    src: url("../../fonts/Lemonada/Lemonada-VariableFont_wght.ttf");
+}
+
+*
+{
+    font-family: "Lemonada", cursive;
+}
