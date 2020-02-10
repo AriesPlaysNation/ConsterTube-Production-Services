@@ -5,6 +5,9 @@
 			automatically uses the correct chapter stylesheet
 */
 
+echo "<!doctype html>";
+echo "<html lang=\"en\">";
+echo "<head>";
 echo "\t<title>$title</title>\n";
 echo "\t<meta charset=\"utf-8\" />\n";
 echo "\t<link rel='stylesheet' href='ariesBot/css/botStyle.css";
