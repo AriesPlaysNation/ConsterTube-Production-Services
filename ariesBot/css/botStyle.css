@@ -37,6 +37,11 @@ footer
     margin: 5px;
 }
 
+#navFooter
+{
+    float: right;
+}
+
 a:link, a:visited, a:active, a:hover
 {
     text-decoration: none;
