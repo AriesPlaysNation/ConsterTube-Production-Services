@@ -13,7 +13,5 @@ require("htmlHead.inc");
         </ul>
     </nav>
 </header>
-asdf<br>
-aalskdjf;alksjdf<br>
-a;lskdfjlaksdjf<br>
+
 <?php require ("htmlFoot.inc");?>
