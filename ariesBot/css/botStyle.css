@@ -36,13 +36,6 @@ footer
     margin: 5px;
 }
 
-#navFooter
-{
-    border: .5px solid white;
-    padding: 5px;
-    margin: 5px;
-}
-
 a:link, a:visited, a:active, a:hover
 {
     text-decoration: none;
