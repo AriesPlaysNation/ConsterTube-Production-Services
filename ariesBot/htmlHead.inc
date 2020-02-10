@@ -7,7 +7,7 @@
 
 echo "\t<title>$title</title>\n";
 echo "\t<meta charset=\"utf-8\" />\n";
-echo "<link rel='stylesheet' href='ariesBot/css/botStyle.css";
+echo "\t<link rel='stylesheet' href='ariesBot/css/botStyle.css";
 echo "</head>\n";
 echo "<body>\n";
 echo "<div id=\"wrapper\">\n";
