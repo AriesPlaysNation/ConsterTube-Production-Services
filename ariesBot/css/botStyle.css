@@ -34,7 +34,6 @@ footer
     border: .5px solid white;
     padding: 5px;
     margin: 5px;
-    display: inline-block;
 }
 
 a:link, a:visited, a:active, a:hover
@@ -46,5 +45,5 @@ a:link, a:visited, a:active, a:hover
 .navA
 {
     margin: 0 5%;
-    display: inline-block;
+    display: inline;
 }
