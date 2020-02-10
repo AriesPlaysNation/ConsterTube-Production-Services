@@ -3,16 +3,9 @@ Date: 2/9/20
 Desc: Scripts for bot/home
  */
 
-function addcopyright()
-{
-    var current = document.getElementById("year");
-    var date = new Date().getFullYear();
-    current.innerHTML = date;
-}
-
 function init()
 {
-    addcopyright();
+
 }
 
 if(window.addEventListener)
