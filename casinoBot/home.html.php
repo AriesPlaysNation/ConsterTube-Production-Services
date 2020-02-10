@@ -1,5 +1,5 @@
 <?php
-$title = "Aries Bot Home";
+$title = "Casino Bot Home";
 
 require("htmlHead.inc");
 ?>

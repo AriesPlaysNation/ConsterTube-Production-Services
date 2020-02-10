@@ -1,5 +1,5 @@
 <?php
-$title = "Aries Commands";
+$title = "Casino Commands";
 require ("htmlHead.inc");
 ?>
     <header>
