@@ -16,5 +16,5 @@
         </ul>
     </nav>
 </header>
-
+    <script src="scripts/script.js"></script>
 <?php require ("htmlFoot.inc");?>
