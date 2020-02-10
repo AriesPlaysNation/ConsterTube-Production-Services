@@ -14,4 +14,16 @@ echo "\t<link rel='stylesheet' href='css/botStyle.css'";
 echo "</head>\n";
 echo "<body>\n";
 echo "<div id=\"wrapper\">\n";
+echo <<<heredoc
+<header>
+    <nav id="nav">
+        <ul>
+            <li class="navA"><a href="home.html.php">Aries Nation Bot</a> </li>
+            <li class="navA"><a href="home.html.php">Home</a></li>
+            <li class="navA"><a href="commands.html.php">Commands</a> </li>
+        </ul>
+    </nav>
+</header>
+heredoc;
+
 ?>
