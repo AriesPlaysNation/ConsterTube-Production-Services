@@ -19,6 +19,7 @@
 footer
 {
     border: .5px solid white;
+    display: inline;
     text-align: center;
     font-size: .75em;
     padding: 5px;
