@@ -1,12 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/botStyle.css"/>
-    <title>Aries Bot Home</title>
-</head>
-<body>
-<div id="wrapper">
+<?php
+$title = "Aries Bot Home";
+
+require("htmlHead.inc");
+?>
+
 <header>
     <nav id="nav">
         <ul>
