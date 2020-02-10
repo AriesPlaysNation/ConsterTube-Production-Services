@@ -18,7 +18,7 @@ echo <<<heredoc
 <header>
     <nav id="nav">
         <ul>
-            <li class="navA"><h1><a href="home.html.php">Aries Nation Bot</a></h1> </li>
+            <li class="navA"><h2><a href="home.html.php">Aries Nation Bot</a></h2> </li>
             <li class="navA"><a href="home.html.php">Home</a></li>
             <li class="navA"><a href="commands.html.php">Commands</a> </li>
         </ul>
