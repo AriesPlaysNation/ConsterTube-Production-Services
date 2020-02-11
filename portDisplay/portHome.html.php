@@ -15,4 +15,4 @@ require ("htmlHead.inc");
     </tr>
 </table>
 
-<?php require ("htmlFooter.inc");
+<?php require ("htmlFooter.inc");?>
