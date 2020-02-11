@@ -8,8 +8,10 @@ require ("htmlHead.inc");
 ?>
 
 <table id="indexList">
-    <tr>
-        <th>Name</th>
+    <tr class="tableHeader">
+        <th class="tableIcons">&nbsp;</th>
+        <th class="tableName">Directory</th>
+        <th class="tableModified">Last Modified</th>
     </tr>
 </table>
 
