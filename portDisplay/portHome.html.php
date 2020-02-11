@@ -13,3 +13,5 @@ require ("htmlHead.inc");
     <tr>Name</tr>
     </tbody>
 </table>
+
+<?php require ("htmlFooter.inc");
