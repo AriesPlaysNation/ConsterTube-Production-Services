@@ -7,13 +7,10 @@ $title = "Portfolio Home Page";
 require ("htmlHead.inc");
 ?>
 
-<div id="indexList">
-<table>
-    <!--<span id="listContent"</span>-->
-    <tbody>
-    <tr>Name</tr>
-    </tbody>
+<table id="indexList">
+    <tr>
+        <th>Name</th>
+    </tr>
 </table>
-</div>
 
 <?php require ("htmlFooter.inc");
