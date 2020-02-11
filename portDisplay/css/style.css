@@ -31,3 +31,17 @@ body
 {
     background-color: beige;
 }
+
+
+footer
+{
+    border: .5px solid azure;
+    display: inline;
+    text-align: center;
+    font-size: .75em;
+    padding: 5px;
+    margin: 5px;
+    position: absolute;
+    bottom: 0;
+    width: 98%;
+}
