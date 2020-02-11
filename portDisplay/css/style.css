@@ -9,11 +9,25 @@
     font-family: "Lemonada", cursive;
 }
 
-#indexList
+table
 {
-    background-color: azure;
-    border: .5px solid azure;
-    border-radius: 25px;
-    padding: 25px;
-    margin: 25px;
+    margin: 10px auto;
+    width: 60%;
+    min-width: 460px;
+    background: azure;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+tr.indexBreakRow
+{
+    border: 0;
+    height: 1px;
+    background: black;
+}
+
+body
+{
+    background-color: beige;
 }
