@@ -1,0 +1,19 @@
+@font-face {
+    font-family: Lemonada;
+    src: url("../../fonts/Lemonada/Lemonada-VariableFont_wght.ttf");
+}
+
+*
+{
+    background-color: darkslategray;
+    font-family: "Lemonada", cursive;
+}
+
+#indexList
+{
+    background-color: azure;
+    border: .5px solid azure;
+    border-radius: 25px;
+    padding: 25px;
+    margin: 25px;
+}
