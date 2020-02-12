@@ -12,5 +12,5 @@ echo <<<heredoc
     || &copy 2019-$year Brad Botteron Portfolio Display of Web Foundations Using JavaScript and PHP ||</footer>
 heredoc;
 
-echo "</div><!--wrapper-->\n<script src=\"../jsScript.js\"></script>\n</body>\n</html>";
+echo "</div><!--wrapper-->\n<script src=\"jsScript.js\"></script>\n</body>\n</html>";
 ?>
