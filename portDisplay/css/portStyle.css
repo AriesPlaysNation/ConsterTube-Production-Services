@@ -36,6 +36,11 @@ table
     text-align: center;
 }
 
+tr
+{
+    background: azure;
+}
+
 th
 {
     border: .5px solid white;
