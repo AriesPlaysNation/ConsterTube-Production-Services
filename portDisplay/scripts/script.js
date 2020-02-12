@@ -18,9 +18,9 @@ function addTableContent()
         var th2 = document.createElement("th");
         var th3 = document.createElement("th");
         th.class = "tableIcons";
-        var a = document.createElement("a");
-        a.href = "img/dir.gif";
-        th.appendChild(a);
+        var img = document.createElement("img");
+        img.src = "img/dir.gif";
+        th.appendChild(img);
         tr.appendChild(th);
         th2.text = courses[0];
         tr.appendChild(th2);
