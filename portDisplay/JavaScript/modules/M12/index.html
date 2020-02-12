@@ -1,30 +1,43 @@
-<!doctype html> <!-- Author:       Brad Botteron -->
-<html lang="en"><!-- Date Written: 11/24/19   -->
-<head>          <!-- Description:  Home page to open more demos -->
-    <title>Lab 12 Index HTML</title>
-    <meta charset="utf-8" /><!-- This series of pages will only work on the Web. -->
-    <link rel="stylesheet" href="lab12.css" />
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Module 12</title>
+    <link rel="stylesheet" href="../../../css/portStyle.css">
 </head>
 <body>
 <div id="wrapper">
-    <header>
-        <h1>Lab12</h1>
-    </header>
-    <article>
-        <h2>HTML Files:</h2>
 
-        <ul>
-            <li><a href="lab12b.html">lab12b.html</a></li>
-            <li><a href="lab12c.html">lab12c.html</a></li>
-            <li><a href="lab12d.html">lab12d.html</a></li>
-            <li><a href="lab12e.html">lab12e.html</a></li>
+    <div class="projectDisplay">
+        <h1>Module 12</h1>
+        <hr>
+
+        <h1 class="h1Display">Demo Assignments</h1>
+        <ul class="ulDisplay">
+            <li><a href="chapter09a.html">Chapter 08 A</a></li>
+            <li><a href="chapter09b.html">Chapter 08 B</a></li>
+            <li><a href="chapter09c.html">Chapter 08 C</a></li>
+            <li><a href="chapter09d.html">Chapter 08 D</a></li>
+            <li><a href="chapter09e.html">Chapter 08 E</a></li>
         </ul>
 
-    </article>
-    <footer>
-        <p>&copy; <span id="copyright"></span>. Ivy Tech Community College.</p>
-    </footer>
-</div><!-- wrapper -->
-<script src="scripts/lab12.js"></script>
+        <hr>
+
+        <h1 class="h1Display">Lab Assignments</h1>
+        <ul class="ulDisplay">
+            <li><a href="lab01.html">Lab 01</a> </li>
+        </ul>
+
+        <hr>
+        <a class="tableFooter" href="../../JavaScript.html.php">Go back</a>
+    </div>
+</div>
+<footer>|| &copy 2019-<span id="year"></span> Brad Botteron Portfolio Display of Web Foundations Using JavaScript ||</footer>
+<script>
+    "use strict";
+    var div = document.getElementById("year");
+    var date = new Date().getFullYear();
+    div.innerHTML = date;
+</script>
 </body>
 </html>
