@@ -18,7 +18,7 @@ function addTableContent()
     for (var i = 0; i < modules.length; i++)
     {
         var a = document.createElement("a");
-        a.href = modules[k];
+        a.href = modules[k] + "/index.html";
         var tr = document.createElement("tr");
         var th = document.createElement("th");
         var th2 = document.createElement("th");
