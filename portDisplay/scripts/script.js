@@ -22,9 +22,9 @@ function addTableContent()
         img.src = "img/dir.gif";
         th.appendChild(img);
         tr.appendChild(th);
-        th2.text = courses[0];
+        th2.innerHTML = courses[0];
         tr.appendChild(th2);
-        th3.text = "-";
+        th3.innerHTML = "-";
         tr.appendChild(th3);
     }
     table.appendChild(tr);
