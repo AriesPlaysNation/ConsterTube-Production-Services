@@ -6,8 +6,6 @@ var index = 0;
 var k = 0;
 var img = "img/dir.gif";
 var courses = ["JavaScript", "PHP"];
-var modules = ["Module 01", "Module 02", "Module 03", "Module 04", "Module 05", "Module 06", "Module 07", "Module 08",
-    "Module 09", "Module 10", "Module 11", "Module 12", "Module 13", "Module 14", "Module 15", "Module 16"];
 
 function addTableContent()
 {
