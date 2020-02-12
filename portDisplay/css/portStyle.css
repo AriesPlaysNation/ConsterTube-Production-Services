@@ -23,6 +23,16 @@ h1
     width: 25px;
 }
 
+.tableName
+{
+    width: 75px;
+}
+
+.tableModified
+{
+    width: 75px;
+}
+
 table
 {
     margin: 10px auto;
