@@ -3,6 +3,7 @@ Date Written:       2/11/2020
  */
 var loc = window.location.pathname;
 var index = 0;
+var i = 0;
 var img = "img/dir.gif";
 var courses = ["JavaScript", "PHP"];
 var modules = ["Module 01", "Module 02", "Module 03", "Module 04", "Module 05", "Module 06", "Module 07", "Module 08",
@@ -11,6 +12,7 @@ var modules = ["Module 01", "Module 02", "Module 03", "Module 04", "Module 05", 
 function addTableContent()
 {
     var table = document.getElementById("tableContent");
+
     for (var i = 0; i < courses.length; i++)
     {
         var tr = document.createElement("tr");
@@ -26,7 +28,9 @@ function addTableContent()
         tr.appendChild(th2);
         th3.innerHTML = "-";
         tr.appendChild(th3);
+        i++;
     }
+    i = 0;
     table.appendChild(tr);
 }
 
