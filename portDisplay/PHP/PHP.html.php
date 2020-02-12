@@ -4,7 +4,7 @@
 */
 $title = "Portfolio Home Page";
 
-require("htmlHead.inc");
+require("../htmlHead.inc");
 ?>
 
 <header>
@@ -37,4 +37,4 @@ require("htmlHead.inc");
     </tr>
 </table>
 
-<?php require("htmlFooter.inc");?>
+<?php require("../htmlFooter.inc");?>
