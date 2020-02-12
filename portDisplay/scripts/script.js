@@ -29,9 +29,10 @@ function addTableContent()
         th3.innerHTML = "-";
         tr.appendChild(th3);
         i++;
+        table.appendChild(tr);
     }
     i = 0;
-    table.appendChild(tr);
+
 }
 
 function getPageDir()
