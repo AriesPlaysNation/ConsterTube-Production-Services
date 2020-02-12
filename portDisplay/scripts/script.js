@@ -13,8 +13,11 @@ function addTableContent()
 {
     var table = document.getElementById("tableContent");
 
+
     for (var i = 0; i < courses.length; i++)
     {
+        var a = document.createElement("a");
+        a.href = courses[k] + "/" + courses[k] + ".html.php";
         var tr = document.createElement("tr");
         var th = document.createElement("th");
         var th2 = document.createElement("th");
@@ -24,6 +27,7 @@ function addTableContent()
         img.src = "img/dir.gif";
         th.appendChild(img);
         tr.appendChild(th);
+        th2.appendChild(a);
         th2.innerHTML = courses[k];
         tr.appendChild(th2);
         th3.innerHTML = "-";
