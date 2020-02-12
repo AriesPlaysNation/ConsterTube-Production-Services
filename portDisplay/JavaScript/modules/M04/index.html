@@ -1,40 +1,41 @@
-<!doctype html>	<!-- Author:  		Brad Botteron                                -->
-<html lang="en"><!-- Date: 		9/24/19		                       -->
-<head>		<!-- Description: 	Practice with debugging and exception handling -->
-   <meta charset="utf-8" /> <!-- NOTE: Other than comments, make no changes to this file. All changes go in the lab04.js file. -->
-   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-   <title>Lab04</title>
-   <link rel="stylesheet" href="lab04.css" />
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Module 03</title>
+    <link rel="stylesheet" href="../../../css/portStyle.css">
 </head>
 <body>
 <div id="wrapper">
-   <header>
-      <h1>Lab04: Debugging and Exception Handling</h1>
-   </header>
-   <article>
-      <h2>Miles (Mi) to Kilometers (Km) converter</h2>
-      <form>
-          <fieldset>
-            <label for="mValue">
-              Enter distance in miles
-            </label>
-            <input type="number" id="mValue" />
-          </fieldset>
-          <fieldset>
-            <button type="button" id="convertButton">Convert to Km</button>
-          </fieldset>
-          <fieldset>
-             <p>Distance in kilometers</p>
-            <p id="kValue"></p>
-          </fieldset>
-     </form>
-   </article>
-   <aside id="errorMessage">
-   </aside>
-<footer>
-  <p>&copy; <span id="year">2019</span> Ivy Tech Community College Northeast.</p>
-</footer>
-</div><!-- wrapper -->
-<script src="lab04.js"></script>
+
+    <div class="projectDisplay">
+        <h1>Module 04</h1>
+        <hr>
+
+        <h1 class="h1Display">Demo Assignments</h1>
+        <ul class="ulDisplay">
+            <li><a href="chapter04a.html">Chapter 04 A</a> </li>
+            <li><a href="chapter04b.html">Chapter 04 B</a> </li>
+            <li><a href="chapter04c.html">Chapter 04 C</a> </li>
+            <li><a href="chapter04c-phase1.html">Chapter 04 C Phase 1</a> </li>
+        </ul>
+
+        <hr>
+
+        <h1 class="h1Display">Lab Assignments</h1>
+        <ul class="ulDisplay">
+            <li><a href="lab01.html">Lab 01 Miles to Kilo Converter</a> </li>
+        </ul>
+
+        <hr>
+    </div>
+</div>
+<footer>|| &copy 2019-<span id="year"></span> Brad Botteron Portfolio Display of Web Foundations Using JavaScript ||</footer>
+<script>
+    "use strict";
+    var div = document.getElementById("year");
+    var date = new Date().getFullYear();
+    div.innerHTML = date;
+</script>
 </body>
 </html>
