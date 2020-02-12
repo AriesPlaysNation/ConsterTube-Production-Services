@@ -9,6 +9,11 @@
     font-family: "Lemonada", cursive;
 }
 
+h1
+{
+    font-size: 1.5em;
+}
+
 table
 {
     margin: 10px auto;
