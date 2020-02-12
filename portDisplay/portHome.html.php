@@ -23,11 +23,6 @@ require ("htmlHead.inc");
         </th>
     </tr>
 
-    <tr>
-        <th class="tableIcons"><img src="img/back.gif"></th>
-        <th class="tableName"><a href="<?php echo dirname(); ?>">Parent Directory</a></th>
-    </tr>
-
     <tbody id="tableContent"></tbody>
 
     <tr class="indexBreakRow">
