@@ -18,7 +18,9 @@ require ("htmlHead.inc");
             <hr>
         </th>
     </tr>
-    <div id="tableContent"></div>
+
+    <span id="tableContent"></span>
+
     <tr class="indexBreakRow">
         <th colspan="3">
             <hr>
