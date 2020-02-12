@@ -1,0 +1,27 @@
+/* Calendar Style */
+.main {
+width:200px;
+border:0px;
+margin-top: 20px;
+}
+.month {
+background-color:rgb(102,178,255);
+font:bold 12px verdana;
+color:white;
+}
+.daysofweek {
+background-color:gray;
+font:bold 12px verdana;
+color:white;
+}
+.days {
+font-size: 12px;
+font-family:verdana;
+color:black;
+background-color: rgb(102,178,255);
+padding: 2px;
+}
+.days #today{
+font-weight: bold;
+color: red;
+}

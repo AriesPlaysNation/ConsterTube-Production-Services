@@ -1,0 +1,67 @@
+/* Author:       Barry J. Sullens               */
+/* Date Written: November 24, 2019              */
+/* Description:  External Style Sheet for Lab13 */ 
+
+@import url("/fonts/ffftusj.css");
+@import url("/fonts/simonetta.css");
+@import url("/fonts/osp-din.css");
+
+body			{	background: url(/images/powder-blue-bkgrnd.png); }
+
+#wrapper	{	margin-left: auto;
+				margin-right: auto;
+				width: 960px;
+			}
+		
+#courseDescription,
+#catalog	{	vertical-align:text-top;
+			}
+		
+#ajaxExample 	{	height: 340px;
+				}
+footer,
+article,
+header		{	font: 1em SimonettaItalic,"Times New Roman",Times;
+				border-radius: 7px;
+				background-color: rgba(0,0,102,0.3);
+				color: rgb(255,255,255);
+				padding: 10px;
+				box-shadow: 2px 2px 2px rgb(102,102,102);
+				margin-top: 15px;
+				margin-bottom: 15px;
+			}
+
+footer		{	font-size: 0.8em;
+				text-align: center;
+			}
+
+h1,h2,
+h3,legend		{	font: 1.3em OSPDIN,Arial,Helvetica; 
+				margin: 5px;
+				text-shadow: 1px 1px 1px rgb(0,0,0);
+			}
+
+h1			{	font: 2.5em FFFTusjBold,Arial,Helvetica; 
+				margin: 5px;
+			}
+
+table			{	margin-bottom: 200px; 	}
+
+th			{	text-align: left; 	}
+
+article		{	background-color: rgba(102,102,102,0.3);
+				text-shadow: 1px 1px 1px rgb(255,255,255);
+				color: rgb(0,0,0);
+				font-size: 1.2em;
+			}
+
+code			{	color: rgb(255,255,255);
+				text-shadow: 1px 1px 1px rgb(0,0,0);
+			}
+
+p			{	margin: 0px;
+				padding: 0px;
+			}
+
+fieldset p		{	font: 1em Calibri, Helvetia, sanserif;		}
+#key			{ 	color: rgb(255,0,0); }

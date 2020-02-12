@@ -1,0 +1,28 @@
+<!doctype html> <!-- Author:       Brad Botteron -->
+<html lang="en"><!-- Date Written: 11/24/19   -->
+<head>          <!-- Description:  Demonstrating hidden fields to preserve state -->
+<title>Chapter09A: Multi-page Forms 1</title>
+<meta charset="utf-8" /><!-- This series of pages will only work on the Web. -->
+<link rel="stylesheet" href="chapter09.css" />
+</head>
+<body>
+<div id="wrapper">
+<header>
+  <h1>Chapter09A: Form Page 1</h1>
+</header>
+<article>
+<h2>This is the First of Three Pages</h2>
+<form name="myform" action="chapter09ab.php" method="post">
+<p>Enter username: 
+   <input type="text" name="username" placeholder="Enter username" 
+          autofocus required /></p>
+<p><input type="submit" name="submit" value="Next ->" />
+</form>
+</article>
+<footer>
+  <p>&copy; <span id="copyright"></span>. Ivy Tech Community College.</p>
+</footer>
+</div><!-- wrapper -->
+<script src="scripts/chapter09a.js"></script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!doctype html>	<!-- Author: YOUR NAME                       -->
+<html lang="en"><!-- Date:	 TODAY'S DATE                    -->
+<head>			<!-- Desc:	 Runtime Errors with embedded JS -->
+<title>Chapter04C: Run-time Errors</title>
+ <meta charset="utf-8" />
+ <link rel="stylesheet" href="chapter04.css" />
+</head>
+<body>
+<div id="wrapper">
+<article>
+    <h1>04C: Run-time Errors</h1>
+	<h2>Testing and Debugging</h2>
+	<p>Let's use some of the tools discussed during the lecture to find and correct all of the run-time errors herein. Try not to eyeball these. Test the page "as is" and use some debugging tools to find and resolve the run-time errors. Use some <code>console.log()</code> entries to help you find the errors.</p>
+	<form>
+		<fieldset id="division">
+			<div>Numerator:</div><!-- We will prevent non-numeric entries in Ch 6 -->
+			<input type="number" name="numerator" id="top" />
+			<div>Denominator:</div>
+			<input type="number" name="denominator" id="bottom" />
+			<input type="button" value="Go" id="button" />
+		</fieldset>
+	</form>
+	<p id="result">The quotient will appear here.</p>
+	<p id="errMsg">&nbsp;</p>
+</article>
+<footer>&copy; 2019. Ivy Tech Community College Northeast</footer>
+</div><!-- wrapper -->
+<script src="chapter04c-phase2.js"></script>
+</body>
+</html>

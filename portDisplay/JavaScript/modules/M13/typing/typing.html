@@ -1,0 +1,42 @@
+<!doctype html> <!-- Author:         Brad Botteron    -->
+<html lang="en"><!-- Date Written:   11/28/19   -->
+<head>          <!-- Description:    Simple AJAX example -->
+ <title>Simple AJAX Example</title>
+ <meta charset="utf-8" />
+ <meta name="viewport" content="width=device-width, initial-scale=1"> 
+ <link rel="stylesheet" href="typing.css" /> 
+</head>
+<body>
+<div id="wrapper">
+<h1>AJAX Example</h1>
+<h2>Query a database with no form ACTION, SUBMIT button, or page refresh.</h2>
+<fieldset>
+<legend>Directions:</legend>
+<ol>
+  <li>Enter a value for the maximum age</li>
+  <li>Either TAB or click into the next field (this queries the database)</li>
+  <li>Enter a value for the maximum words per minute</li>
+  <li>Either TAB or click into the next field (this queries the database)</li>
+  <li>Change the gender field and watch the query results change</li>
+  <li>View the source code to prove there's no ACTION or SUBMIT for this form</li>
+</ol>
+</fieldset>
+<form name="myForm">
+<p><label class="oneForty">Max Age:</label>
+   <input type="number" id="age" autofocus tabindex="1" /></p>
+<p><label class="oneForty">Max WPM:</label>
+   <input type="number" id="wpm" tabindex = "2" /></p>
+<p><label class="oneForty">Gender:</label> 
+   <select id="gender" tabindex = "3">
+	<option value="m">M</option>
+	<option value="f">F</option>
+   </select></p>
+<p><label id="forButton"><input id="theButton" type="button" 
+       value="Query Now" title="This is NOT a submit button, just a button" /></label></p>
+</form>
+<aside id="ajaxDiv">Your results will display here.</aside>
+</div><!-- wrapper -->
+<script src="ajax-framework.js"></script>
+<script src="typing.js"></script>
+</body>
+</html>

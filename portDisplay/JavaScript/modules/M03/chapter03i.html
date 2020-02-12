@@ -1,0 +1,82 @@
+<!doctype html>	<!-- Author:		YOUR NAME            -->
+<html lang="en"><!-- Date:			TODAY'S DATE         -->
+<head>		    <!-- Description:	The Switch Statement -->
+<title>Chapter03I - SWITCH</title>
+ <meta charset="utf-8" />    
+ <link rel="stylesheet" href="chapter03.css" />
+</head>
+<body>
+<div id="wrapper">
+<header>
+    <h1>Selection</h1>
+	<p>Let's investigate nested SWITCH statements. </p>
+</header>
+<article>
+<h2>SWITCH statements</h2>
+ <form><!-- No action or method; not connected to a back-end script -->
+  What is your favorite color?
+  <select name="color" id="color"> 
+    <option value="">---SELECT ONE---</option>
+    <option value="B">Blue</option>
+    <option value="R">Red</option>
+    <option value="G">Green</option>
+    <option value="Y">Yellow</option>
+    <option value="P">Purple</option>
+    <option value=" ">Other</option>
+  </select>
+ </form>
+</article>
+<aside>
+  <p id="response" style="padding: 5px;">&nbsp;</p>
+</aside>
+<script>
+    function changeColors() {
+        var choiceColor = document.getElementById("color").value;
+        var textColor = "rgb(255, 255, 255)"; // default text color
+        var backColor = "rgb(255, 255, 255)"; // default background color
+        var responseContainer = document.getElementById("response");
+        var responseText = "";
+        switch(choiceColor)
+        {
+            case "B": responseText = "Wow, I love blue too!";
+            backColor = "rgb(0,0,102)";
+            break;
+            case "R": responseText = "Red is a beautiful color.";
+            backColor = "rgb(204, 0, 51)";
+            break;
+            case "G": responseText = "Green reminds me of springtime.";
+            backColor = "rgb(51,102,51";
+            break;
+            case "Y": responseText = "Yellow is a fresh color.";
+            backColor = "rgb(255, 255, 0)";
+            textColor = "rgb(0,0,0)";
+            break;
+            case "P": responseText = "Purple makes me think of royalty";
+            backColor = "rgb(102, 0, 102";
+            break;
+            default: responseText = "You don't like any colors I like.";
+            textColor = "rgb(0,0,0)";
+            break;
+        } // END SWITCH
+        responseContainer.innerHTML = responseText; // show response
+        responseContainer.style.color = textColor; // Javascript controls style
+        responseContainer.style.backgroundColor = backColor;
+    } // END Function
+   </script>
+  <footer>&copy;<span id="year"></span>. Ivy Tech Community College Northeast.</footer>
+</div>
+<script>
+    var currentYear = new Date().getFullYear();
+    var dateContainer = document.getElementById("year");
+    dateContainer.innerHTML = currentYear;
+    colorMenu = document.getElementById("color");
+    if(colorMenu.addEventListener)
+    {
+        colorMenu.addEventListener("change", changeColors, false);
+    } else if (theSubmitButton.attachEvent)
+    {
+        colorMenu.attachEvent("onchange", changeColors);
+    }
+</script>
+</body>
+</html>

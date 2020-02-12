@@ -1,0 +1,89 @@
+/*  Stylesheet for Chapter 9 demo scripts */
+
+@import url(/fonts/hvdbodedo.css); 
+@import url(/fonts/brawler.css);    
+
+#wrapper {	width:950px;
+		border:4px solid rgb(0,102,153);
+		padding:20px;
+		margin:2.5em auto 20px auto;
+	} 
+		
+body	{	font: 1em BrawlerRegular, Times, serif; }
+		
+h1,h2	{	margin-top: 10px; 
+		margin-bottom: 5px;
+	}
+
+h1	{ 	font: 2em hvdBodedoMedium,Arial,Helvetica,sans-serif;
+		margin-top: 0px;
+	}
+h2	{ 	font: 1.2em hvdBodedoMedium, Helvetica, sans-serif; }
+h3	{	font-size: 0.95em; }
+
+span.h3 {	margin: 10px 0px 0px 0px;
+		font-weight: bold;
+		font-size: 1.1em;
+		display: block;
+	}
+
+
+p,li	{	font: 1em BrawlerRegular;
+		padding: 5px;
+	}
+
+ul 	{	list-style-type: none;
+	}
+
+
+pre	{	margin-left: 50px;
+		padding: 20px;
+		width: 450px;
+		border: 1px solid rgb(0,0,0);
+		background-color: rgb(222,222,222);
+		box-shadow: 4px 5px 5px rgb(51,51,51);
+		border-radius: 20px;
+	}
+
+article	{	border: 2px solid rgb(102,102,102);
+		background-color: rgb(204,204,204);
+		box-shadow: 3px 3px 3px rgb(51,51,51);
+		padding: 10px;
+		font: 1.4em Calibri,Helvetica,sanserif;
+		margin-bottom: 20px;
+		margin-top: 20px;
+	}
+footer	{	font: 0.8em "Calibri, Helvetica, sanserif"; 
+		margin-top: 20px;
+		font-style: italic;
+		text-align: center;
+	}
+
+table	{	border: 2px solid rgb(0,0,85);
+		box-shadow: 1px 1px 1px rgb(51,51,51);
+		margin: 30px;
+	}
+
+td	{	border: 1px solid rgb(0,0,170); }
+th	{	padding-right: 25px; }
+
+code	{	font-size: 1.3em;
+		color: rgb(0,102,153);
+		font-weight: bold;
+	}
+form	{	margin: 30px 0px; }
+.psssst	{	font-style: italic;
+                font-size: 0.8em; 
+		text-align: center;
+	}
+
+.single	{	margin: 0px; }
+
+.blue   {	color: rgb(0,0,255);
+		font-weight: bold;
+	}
+
+.red	{	color: rgb(255,0,0);
+		font-weight: bold;
+	}
+hr	{	border: 2px solid rgb(0,102,153); }

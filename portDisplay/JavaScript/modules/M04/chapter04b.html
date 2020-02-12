@@ -1,0 +1,108 @@
+<!doctype html>	<!-- Author:	YOUR NAME               -->
+<html lang="en"><!-- Date:		TODAY'S DATE            -->
+<head>			<!-- Desc:		Correcting Logic Errors -->
+<title>Chapter04B: Logic Errors</title>
+ <meta charset="utf-8" />    
+ <link rel="stylesheet" href="chapter04.css" />
+ <script>
+ function calculateAverage()
+ {
+	// Input:		none
+	// Processing:	calculate average of two scores	
+	// Output:		return average to calling program
+     console.log("*1. **Entering calculateAverage()");
+	var results    = [];
+	var testScore1 = 77;
+	var testScore2 = 99;
+	//Added perin to testScore1 + testScore2
+	var average = (testScore1 + testScore2) / 2;
+	results[0]  = testScore1;
+	results[1]  = testScore2;
+	results[2]  = average;
+	return results;
+	console.log("*2. tsl=" + testScore1 + " ts2 = " + testScore2 + " average = " + average);
+ } // end function calculateAverage()
+ </script>
+</head>
+<body>
+<div id="wrapper">
+<header>
+    <h1>04B: Logic Errors</h1>
+	<h2>Testing and Debugging</h2>
+	<p>Sometimes the most difficult errors to find are logic errors. Symptoms of a logic error include incorrect output and unpredictable program behavior. The most effective techniques for debugging logic errors include a structured walkthrough, debug "write" statements, and console logging. Use these techniques to correct the logic errors in this script.</p>
+</header>
+<article>
+<h2>If statements</h2>
+<form>
+  <p>I'm thirsty!</p>
+  <p>Are you thirsty?
+     <select name="thirsty" id="thirsty">
+        <option value="1">Yes</option>
+        <option value="0">No</option>
+     </select>
+  <p>How old are you?
+     <input type="number" name="age" id="age" /></p>
+  <p><input type="button" name="submit" id="submit" value="Submit" />
+</form>
+</article>
+<aside>
+  <p id="response">&nbsp;</p>
+</aside>
+<article>
+<p id="average">&nbsp;</p>
+</article>
+<footer>&copy; 2019. Ivy Tech Community College Northeast</footer>
+</div><!-- wrapper -->
+   <script>
+      function grabBeer() 
+	  {
+		// Input:		get age and thirsty from HTML form
+		// Processing:	generate response text based on age and thirsty values
+		// Output:		display response in existing container
+
+          console.log("*3. **Entering grabBeer()");
+         var age = document.getElementById("age").value;
+         var thirsty = document.getElementById("thirsty").value;
+         var responseContainer = document.getElementById("response");
+         var responseText = "";
+         if (age >= 21) // Added = to test if user is 21
+         {
+             console.log("*4. If age is >= 21");
+             console.log("*5. age = " + age);
+            if (thirsty==1)
+            {
+                console.log("*6. if thirsty TRUE block");
+                console.log("*7. age = " + age);
+              responseText = "Thirsty and over 21...let's grab a beer!";
+            } // end true block of IF thirsty
+            else
+            {
+                console.log("*8. If thirsty FALSE block");
+                console.log("*9. age = " + age);
+              responseText = "Want to sit at the bar and watch me drink, then?";
+            }// end IF THIRSTY
+         }// end IF OVER 21
+         else if (thirsty==1)
+         {
+             console.log("*10. Else if thirsty TRUE block");
+             console.log("*11. age = " + age);
+          responseText =  "Aw, since you're only " + age;
+          responseText += ", wanna grab a Pepsi?";
+         } // end true block of ELSE IF
+         else
+         {
+             console.log("*12. Else if thirsty FALSE block");
+             console.log("*13. age = " + age);
+           responseText = "Ok. Since you're not thirsty, see ya later!";
+         }// end ELSE IF THIRSTY
+         responseContainer.innerHTML = responseText;
+      }// end FUNCTION grabBeer
+      console.log("*14. Phase1: Broken, but fixable with console.logs");
+      console.log("*15. ***Beginning main program");
+	  var avgContainer = document.getElementById("average");
+	  var testResults = calculateAverage();
+	  avgContainer.innerHTML = testResults[0] + " and " + testResults[1] + " average to " + testResults[2];
+      document.getElementById("submit").addEventListener("click", grabBeer, false);
+   </script>
+</body>
+</html>

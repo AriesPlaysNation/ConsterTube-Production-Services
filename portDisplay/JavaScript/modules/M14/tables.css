@@ -1,0 +1,31 @@
+/*  Stylesheet for Chapter 15 demos scripts */
+
+table	{	
+		width: 90%;
+		border: 2px solid rgb(0,0,85);
+		box-shadow: 1px 1px 1px rgb(51,51,51);
+		margin: 30px 40px;
+	}
+
+th	{	padding: 5px 25px 5px 5px;
+		background-color: rgb(51,51,102);
+		color: rgb(255,255,255);
+	}
+
+tr:nth-of-type(odd) {	background-color: rgb(217,225,242); }
+
+code	{	font-size: 1.3em;
+	}
+form	{	margin: 30px 0px; }
+
+.single	{	margin: 0px; }
+
+.collapse {	border-collapse: collapse; }
+.centered {	text-align: center; }
+.left	  {	text-align: left; }
+.right	  {	text-align: right; }
+.shaded	  {	background-color: rgb(204,204,204); }
+.lpad	  {	padding-left: 15px; }
+.rpad	  {	text-align: right;
+		padding-right: 25px;
+	  }

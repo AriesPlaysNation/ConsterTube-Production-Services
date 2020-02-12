@@ -1,0 +1,49 @@
+<!doctype html> <!-- Author:          Brad Botteron -->
+<html lang="en"><!-- Date Written:    11/24/19   -->
+<head>          <!-- Description:     Demonstrate writing a cookie -->
+<title>Chapter09B - Creating Cookies</title>
+<meta charset="utf-8" />
+<link rel="stylesheet" href="lab12.css" />
+</head>
+<body>
+<div id="wrapper">
+<header><h1>Chapter09B: Delicious Cookies</h1></header>
+<article>
+<h2>Tell us about yourself</h2>
+<form name="myform">
+<p><label class="oneEighty">First Name:</label>
+   <input type="text" name="customerFirst" required /></p>
+
+<p><label class="oneEighty">Last Name:</label>
+    <input type="text" name="customerLast" required /></p>
+
+<p><label class="oneEighty">Gender:</label>
+    <input type="radio" name="gender" value="female" checked="checked">Female</input>
+    <input type="radio" name="gender" value="male">Male</input>
+</p>
+
+<p>
+    <input type="radio" name="image" class="radiobtn" id="image1" value="blgr122" checked="checked"/>
+    <label for="image1"><img class="images" src="images/blgr122.gif"/></label>
+
+    <input type="radio" name="image" class="radiobtn" id="image2" value="purpl028"/>
+    <label for="image2"><img class="images" src="images/purpl028.jpg"/></label>
+
+    <input type="radio" name="image" class="radiobtn" id="image3" value="red098"/>
+    <label for="image3"><img class="images" src="images/red098.jpg"/></label>
+</p>
+
+<p><label class="oneEighty">Favorite Color:</label>
+   <input type="color" name="favColor" /></p>
+
+<input type="button" value="Set Cookie" id="cookie" />
+</form>
+<p id="errorMsg">&nbsp;</p>
+</article>
+<footer>
+  <p>&copy; <span id="copyright"></span>. Ivy Tech Community College.</p>
+</footer>
+</div><!-- wrapper -->
+<script src="scripts/lab12b.js"></script>
+</body>
+</html>

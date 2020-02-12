@@ -1,0 +1,17 @@
+/* External Style Sheet for lab03 */
+
+#wrapper {	width:500px;
+		border:4px solid rgb(0,102,153);
+		padding:20px;
+		margin:2.5em auto 20px auto;
+	 } 
+
+	
+ul.data	{	list-style-type: none; }
+
+footer	{	margin-top: 30px; }
+
+.red	{	color: rgb(255,0,0);
+			font-weight: bold;
+		}
+

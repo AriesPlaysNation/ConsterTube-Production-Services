@@ -1,0 +1,29 @@
+<!doctype html>		<!-- Author:	  Barry J. Sullens  -->
+<html lang="en">	<!-- Date:	  November 10, 2019    -->
+<head>			<!-- Description: Working with JSON -->	
+<title>Chapter08B - JSON</title>
+ <meta charset="utf-8" />    
+ <meta name="viewport" content="width=device-width,initial-scale=1.0">
+ <link rel="stylesheet" href="chapter08.css" />
+</head>
+<body>
+<div id="wrapper">
+<article>
+    <h1>JSON and the Objectnauts</h1>
+	<h2>Sending an object to another page</h2>
+	<p>This example demonstrates how to declare an object with an object literal, convert the object to a JSON string, and pass the string to a server-side script, so the server-side script can manipulate the object.</p>
+	<form	action="chapter08b.php"  	
+			method="post"> 		<!-- this form relies on a back-end script, so -->		
+	<fieldset>					<!-- you can only test it on the server.       -->
+	<legend>Send Object to the Next Page</legend>
+	<p>Click submit to send the object to the server for processing.</p>
+	<input type="hidden" id="jsonObj"  name="jsonObj" value="" />
+	<input type="submit" id="submit"   name="submit"  value="Send" />
+	</fieldset>
+	</form>
+</article>
+<footer>&copy; <span id="copyright">20XX</span>. Ivy Tech Community College.</footer>
+</div><!-- wrapper -->
+<script src="chapter08b.js"></script>
+</body>
+</html>

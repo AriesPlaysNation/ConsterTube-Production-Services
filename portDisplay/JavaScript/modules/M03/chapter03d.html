@@ -1,0 +1,39 @@
+<!doctype html>	<!-- Author:		YOUR NAME         -->
+<html lang="en"><!-- Date:			TODAY'S DATE      -->
+<head>			<!-- Description:	Arrays and Loops  -->
+ <title>Chapter03D - Arrays and Loops</title>
+ <meta charset="utf-8" />    
+ <link rel="stylesheet" href="chapter03.css" />
+<script>
+    function buildListItem(myArray)
+    { // Build a list within the document using array elements
+        for(var i = 0; i < myArray.length; i++)
+        {
+            document.write("<li>" + myArray[i] + "</li>"); // build one list item
+        } // END for loop
+    } // END function buildListItem
+</script>
+</head>
+<body>
+<div id="wrapper">
+  <h1>Arrays and Loops</h1>
+  <article>
+    <h2>Creating an Ordered List</h2>
+    <p>And now we will use a function to build an ordered list.</p>
+	<ol class="special"><!-- avoiding an unbalanced tree -->
+    <script>
+        var fruit = ["apples", "oranges", "peaches", "bananas"]; // populate array
+        buildListItem(fruit); // call function and pass array as argument
+    </script>
+	</ol><!-- avoiding an unbalanced tree -->
+  </article>
+  <footer>&copy;<span id="year"></span>. Ivy Tech Community College Northeast.</footer>
+</div>
+<script>
+  /* Handy script to update the copyright year in the footer */
+    var currentYear = new Date().getFullYear(); // Get current year
+    var dateContainer = document.getElementById("year"); // name the date container
+    dateContainer.innerHTML = currentYear; // replace date container's contents
+</script>
+</body>
+</html>

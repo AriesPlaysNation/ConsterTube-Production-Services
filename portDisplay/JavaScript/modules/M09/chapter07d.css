@@ -1,0 +1,89 @@
+/*
+	Author: 		YOUR NAME
+	Date:			October 25, 2019
+	Description:	External Style Sheet for chapter07c.html
+*/
+@import url(fonts/bevan.css); 
+@import url(fonts/cardo.css); 
+
+#wrapper	{	width: 800px;
+				margin: auto;
+			}
+body			{	font: 1em 'CardoRegular'; 
+			}
+h1			{	font: 2em 'BevanRegular'; 
+				line-height: 75%;
+			}
+header		{	width: 800px;
+				height: 80px;
+				margin-bottom: 40px;
+				padding: 10px;
+			}		
+article		{	width: 440px;
+				height: 150px;
+				padding: 10px;
+				margin-left: 40px;
+				float: left;
+			}			
+aside			{	width: 200px;
+				height: 200px;
+				margin-left: 40px;
+				margin-right: 20px;
+				float: right;
+			}		
+aside header	{	width: 200px; }
+h3			{	margin-top: 0px;
+				margin-bottom: 5px;
+			}	
+h2			{	font: 1em 'BevanRegular'; 	
+				width: 200px;
+				text-align: center;
+			}			
+main			{	width: 440px;
+				height: 80px;
+				margin-top: 40px;
+				margin-left: 40px;
+				padding: 10px;
+				clear: both;
+			}
+main p		{	margin-top: 0px; }
+			
+figure		{	width: 200px;
+				height: 200px;		
+				margin-top: -60px;		
+				margin-left: 30px;
+				margin-right: 10px;
+				margin-bottom: 35px;
+				text-align: center;
+				padding: 5px;
+				float: right;
+			}		
+footer		{	width: 800px;
+				height: 80px;
+				margin-top: 40px;
+				padding-top: 10px;
+				clear: both;
+				text-align: center;
+			}
+ul			{	list-style-type: none; }			
+
+header, 
+footer 		{	background-color: rgb(153,204,255);
+				color: rgb(255,255,255); 
+				border: 2px solid rgb(255,255,255);
+				text-shadow: 1px 1px 2px rgb(0,0,0);
+				border-radius: 5px;
+				box-shadow: 3px 3px 3px rgb(51,51,51);
+			}
+article, 
+aside, main, 
+figure 		{	background-color: rgb(204,229,255);
+				color: rgb(255,255,255); 
+				color: rgb(51,51,51);
+				border: 2px solid rgb(255,255,255);
+				border-radius: 5px;
+				box-shadow: 3px 3px 3px rgb(102,102,102);
+			}
+h2		{	color: rgb(255,255,255); 
+			text-shadow: 2px 2px 3px rgb(0,0,0);
+		}

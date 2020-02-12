@@ -1,0 +1,103 @@
+/* External Stylesheet for SDEV 250 Exam 1 */
+
+@import url(fonts/illuminate.css);
+@import url(fonts/negotiate.css);
+
+	#wrapper		{	width: 900px;
+						margin: 100px auto;
+						height: 600px;
+					}
+	body			{	font: 1em NegotiateFree,"Times New Roman", serif;
+						background:	url("/images/vertical_cyan.png") top right repeat-y,
+									url("/images/vertical_cyan.png") top left repeat-y,
+									url("/images/background_11.gif") top left;
+					}
+	h1,h2			{	font: 3em IlluminateRegular,Arial,Helvetica,sans-serif; 
+						text-shadow: 2px 2px 1px rgb(102,102,102);
+						color: rgb(51,102,102);
+					}
+	h2				{	font-size: 1.5em; }
+	
+	.grid1			{	width: 80px; 
+						display: block;
+						float: left;
+						margin-bottom: 20px;
+						margin-right: 10px;
+						margin-left: 10px;
+					}
+    .grid2			{	width: 180px; 
+						display: block;
+						float: left;
+						margin-bottom: 20px;
+						margin-right: 10px;
+						margin-left: 10px;
+					}
+	.grid3			{	width: 50px; 
+						display: block;
+						float: left;
+						margin-bottom: 20px;
+						margin-right: 10px;
+						margin-left: 10px;
+					}
+	p				{	clear: both; }
+	
+	legend			{	font-weight: bold; 
+						color: rgb(51,102,102);
+						text-shadow: 1px 1px 1px rgb(255,255,255);
+					}
+	
+	fieldset#right,
+	fieldset#left	{	width: 400px; 
+						background-color: rgb(217,224,225);
+						height: 200px;
+						border-radius: 4px;
+						box-shadow: 2px 2px 1px rgb(25,25,25);
+					}
+	
+	#left			{	float: left; 
+					}
+	#right			{	float: right;
+						clear: right;
+					}
+	
+	input[name="fname"] 	{	margin-right: 5px; 
+								width: 90px; 
+							}
+	input[name="lname"] 	{	width: 125px; }
+	input[name="age"]		{	width: 3em; }
+	input[type="submit"]	{	background-color: rgb(217,224,225);
+								border-radius: 4px;
+								color: rgb(51,102,102);
+								font-weight: bold;
+							}
+	input[type="checkbox"]	{	margin-right: 10px; 
+								margin-left: 15px;
+							}
+	label					{	display: block; }
+	
+	.twoColumn   {  -moz-column-count: 2; 
+                   -moz-column-gap: 1em;
+                   -webkit-column-count: 2;
+                   -webkit-column-gap: 1em;
+                }
+	ol			{	margin-top: 0px; }
+	li			{	list-style-type: square; }
+	form		{	margin: 40px 0px; }
+	footer		{	padding-top: 40px; 
+					text-align: center;
+					clear: both;
+					font-size: 0.8em;
+				}
+	
+	code		{	font-size: 1.3em; }
+	
+	p#submit	{	text-align: center;
+					padding-top: 40px;
+				}
+	p#errorMsg	{	text-align: center;
+					color: rgb(255,0,0);
+					text-shadow: 1px 1px 0px rgb(51,51,51);
+					height: 25px; 
+				}
+
+h1#key			{	color: rgb(255,0,0); }

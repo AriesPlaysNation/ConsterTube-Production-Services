@@ -1,0 +1,63 @@
+<!doctype html>	<!-- Author:	YOUR NAME                -->
+<html lang="en"><!-- Date:		TODAY'S DATE             -->
+<head>			<!-- Desc:		Correcting Syntax Errors -->
+<title>Chapter04A: Syntax Errors</title>
+ <meta charset="utf-8" />    
+ <link rel="stylesheet" href="chapter04.css" />
+</head>
+<body>
+<div id="wrapper">
+<header>
+    <h1>04A: Syntax Errors</h1>
+	<h2>Testing and Debugging</h2>
+	<p>Let's use some of the tools discussed during the lecture to find and correct all of the syntax errors herein. Some of the errors may be obvious enough to "eyeball," but others will likely require using a debugging tool. Let's use the Browser's Error Console to find the errors.</p>
+</header>
+<article>
+<h2>The while loop</h2>
+<p>Test the exit condition at the top of the loop.</p>
+<ul>
+<script>
+    // Add quotes around Y
+  var     response = prompt("Do you want to play?", "Y"); // priming read...
+  while ((response == "Y" || response == "y"))
+  {
+    document.write("\n  <li>I like it when you say yes.</li>\n");
+    response = prompt("WHILE: Do you want to keep playing?", "Y");
+  }
+  // Typo
+  document.write("\n  <li>WHILE. Goodbye!</li>\n");
+</script>
+</ul>
+</article>
+<article>
+<h2>The do while loop</h2>
+<p>Test the exit condition at the bottom of the loop. </p>
+<ul>
+<script>
+  do
+  {
+    document.write("\n  <li>I like to play this game.</li>\n");
+    response = prompt("DO/WHILE: Do you want to keep playing?", "Y");
+  } while ((response == "Y" | response == "y"))
+  document.write("\n  <li>DO/WHILE. Goodbye!</li>\n");
+</script>
+</ul>
+</article>
+<article>
+<h2>The for loop</h2>
+<p>Execute a finite number of iterations.</p> 
+<ul>
+<script>
+  document.write("\n<ol>\n");
+  for (var i=1; i<=10; i++) {
+      document.write("  <li>Playing the game...</li>\n");
+      document.write("</ol>\n");
+      document.write("<p>I'm done.</p>\n");
+  } // Added ending bracket
+</script>
+</ul>
+</article>
+<footer>&copy; 2019. Ivy Tech Community College Northeast</footer>
+</div><!-- wrapper -->
+</body>
+</html>

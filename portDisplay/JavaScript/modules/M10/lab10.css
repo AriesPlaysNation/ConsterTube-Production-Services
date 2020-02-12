@@ -1,0 +1,53 @@
+/* External Style Sheet for Chapter 7 Part 2 */
+
+@import url(fonts/appleberry.css);
+@import url(fonts/newcicle.css); 
+
+body		{	background-color: rgb(255,255,255);
+			}
+
+h1			{	font: 2.5em 'AppleberryRegular',Arial, Helvetica, sans-serif; 
+				margin-bottom: 0px;
+				text-shadow: 1px 1px 1px rgb(255,255,255);
+			}
+h2			{	font: 1.5em 'NewCicleGordita',Arial Helvetica, sans-serif; 
+				margin-top: 0px;
+				text-shadow: 1px 1px 1px rgb(255,255,255);
+			}
+#wrapper	{	width:900px;
+				border:4px solid rgb(0,102,153);
+				padding:20px;
+				margin:auto;
+			}
+
+article	{	background-color: rgba(153,204,204,0.5);
+			color: rgb(0,0,0);
+			padding: 10px;
+			border-radius: 7px;
+		}
+footer,		
+li,p 	{
+			margin-top:20px;
+			font: 1em 'NewCicleGordita', Arial, sans-serif;
+			color: rgb(0,0,0);
+			text-shadow: 1px 1px 1px rgb(255,255,255);
+		}
+li		{	margin-top: 0px;
+			margin-bottom: 0px;
+		}
+pre		{	font: 1em "Courier New",Courier,monospace;
+			margin: 10px;
+			padding: 15px; 
+			background-color: rgb(255,255,255);
+			color: rgb(0,0,255);
+			width: 50%;
+			border: 1px dotted rgb(0,0,0);
+		}
+#result		{	padding: 5px;
+				border: 1px dotted rgb(0,0,255);
+				width: 30%;
+				box-shadow: 3px 5px 10px rgb(102,102,102);
+			}
+code			{	font: 1.1em Consolas,"Courier New", monospace; 
+				font-weight: bold;
+			}

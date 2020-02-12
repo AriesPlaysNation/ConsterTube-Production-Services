@@ -1,0 +1,35 @@
+/* Author:             YOUR NAME                    */
+/* Date Written:       TODAY'S DATE                   */
+/* Description:        External stylesheet for Typing Demo */
+
+@import url(fonts/appleberry.css);
+@import url(fonts/junction.css); 
+
+   #wrapper 	{ width: 800px;
+		  margin: auto;
+		}
+   body		{ background-color: rgb(255,255,255); 
+		  font: 1em junctionregularRegular, Arial, Helvetica, sanserif;
+		}
+   h1,h2	{ font: 2em AppleberryRegular, Arial, Helvetica, sanserif;
+                  margin: 0px; 
+                }
+   h2		{ font-size: 1em; }
+
+   #ajaxDiv	{ clear: both; 
+		  padding-top: 20px;
+		}
+   fieldset	{ margin: 10px; }
+   legend	{ font: 1em Arial, Helvetica, sanserif; }
+   table	{ border: 1px solid rgb(102,102,102); }
+
+   .oneForty	{	width: 140px;
+			display: block;
+			float: left;
+		}
+   input	{	display: block;
+			float: left;
+		}
+   p		{	clear: both; }
+
+   #forButton	{	float: left; }

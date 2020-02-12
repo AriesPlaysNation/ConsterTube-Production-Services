@@ -1,0 +1,72 @@
+<!doctype html>	<!-- Author:		YOUR NAME            -->
+<html lang="en"><!-- Date:			TODAY'S DATE         -->
+<head>			<!-- Description:	Nested IF statements -->
+<title>Chapter03H - IF/ELSE IF</title>
+ <meta charset="utf-8" />    
+ <link rel="stylesheet" href="chapter03.css" />
+</head>
+<body>
+<div id="wrapper">
+<header>
+    <h1>Selection IF/ELSE IF</h1>
+	<p>Let's investigate nested IF statements. </p>
+</header>
+<article>
+<h2>If statements</h2>
+<form><!-- No action or method; not connected to a back-end script -->
+  <p>I'm thirsty!</p>
+  <p>Are you thirsty?
+     <select name="thirsty" id="thirsty">
+        <option value="1">Yes</option>
+        <option value="0">No</option>
+     </select>
+  <p>How old are you?
+     <input type="number" name="age" id="age" /></p>
+  <p><input type="button" name="submit" id="submit" value="Submit" />
+</form><!-- That's not a real submit button, ya know. -->
+</article>
+<aside>
+  <p id="response">&nbsp;</p>
+</aside>
+   <script>
+       function grabBeer(){
+           var age = document.getElementById("age").value;
+           var thirsty = document.getElementById("thirsty").value;
+           var responseContainer = document.getElementById("response");
+           var responseText = "";
+           if(age >= 21)
+           {
+               if(thirsty==1)
+               {
+                   responseText = "Thirst and over 21...let's grab a beer!";
+               } else
+               {
+                   responseText = "Want to sit at the bar and watch me drink, then?";
+               } // END if thirst
+           } else if(thirsty==1)
+           {
+               responseText = "Aw, since you're only " + age;
+               responseText += ", wanna grab a pepsi?";
+           } else {
+               responseText = "Ok. Since you're not thirsty, see ya later!";
+           } // END else if thirsty
+           responseContainer.innerHTML = responseText; // show response
+       } // END Function
+   </script>
+<footer>&copy;<span id="year"></span>. Ivy Tech Community College Northeast.</footer>
+</div>
+<script>
+    var currentYear = new Date().getFullYear();
+    var dateContainer = document.getElementById("year");
+    var theSubmitButton = document.getElementById("submit");
+    dateContainer.innerHTML = currentYear;
+    if(theSubmitButton.addEventListener)
+    {
+        theSubmitButton.addEventListener("click", grabBeer, false);
+    } else if(theSubmitButton.attachEvent)
+    {
+        theSubmitButton.attachEvent("onclick", grabBeer);
+    }
+</script>
+</body>
+</html>

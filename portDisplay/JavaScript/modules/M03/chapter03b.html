@@ -1,0 +1,61 @@
+<!doctype html> <!-- Author:	  YOUR NAME                       -->
+<html lang="en"><!-- Date: 		  TODAY'S DATE                    -->
+<head>			<!-- Description: This script does not work. Why? -->
+<title>Chapter03B - Associative Arrays</title>
+<meta charset="utf-8" />
+<link rel="stylesheet" href="chapter03.css" />
+<script>
+  var capitalCitiesArray = []; // The associative array of cities
+  var currentCountry;
+  capitalCitiesArray["US"] = "Washington DC";
+  capitalCitiesArray["England"] = "London";
+  capitalCitiesArray["France"] = "Paris";
+  capitalCitiesArray["Italy"] = "Rome";
+
+  function displayCapital (currentCountry) // Display capital for chosen country
+  {
+    var currentCapital = capitalCitiesArray[currentCountry];
+      // Looks up capital for current country in array
+    theCapitalDisplay = document.getElementById("capitalDisplay");
+      // Finds the destination HTML element
+    theCapitalDisplay.innerHTML = "The capital of " + currentCountry + " is " + currentCapital + ".";
+      // replaces text in p with current capital
+  } // END of if statement
+
+</script>
+</head>
+<body>
+<div id="wrapper">
+<h1>Associative Array Demo</h1>
+<article>
+  <h2>Capital Cities</h2>
+  <input type="button" id="us" value="What's the capital city of the USA?" />
+  <input type="button" id="en" value="What's the capital city of England?" />
+  <input type="button" id="fr" value="What's the capital city of France?"  />
+  <input type="button" id="it" value="What's the capital city of Italy?"   />
+  <p id="capitalDisplay">The capital will be displayed here.</p>
+</article>
+</div>
+<script>
+  var usButton = document.getElementById("us"); // Assigns vars to buttons
+  var enButton = document.getElementById("en");
+  var frButton = document.getElementById("fr");
+  var itButton = document.getElementById("it");
+
+  /* XBCEL = Cross Browser Compatible Event Listener */
+  if(window.addEventListener){ // These function calls will not work...why?
+    usButton.addEventListener("click", function(){displayCapital("US")}, false);
+    enButton.addEventListener("click", function(){displayCapital("England")}, false);
+    frButton.addEventListener("click", function(){displayCapital("France")}, false);
+    itButton.addEventListener("click", function(){displayCapital("Italy")}, false);
+  } else if (window.attachEvent){
+    usButton.attachEvent("onclick", function(){displayCapital("US")});
+    enButton.attachEvent("onclick", function(){displayCapital("England")});
+    frButton.attachEvent("onclick", function(){displayCapital("France")});
+    itButton.attachEvent("onclick", function(){displayCapital("Italy")});
+  } // END if addeventlistener
+
+
+</script>
+</body>
+</html>

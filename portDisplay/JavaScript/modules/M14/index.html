@@ -1,0 +1,42 @@
+<!doctype html> <!-- Author:       Brad Botteron          -->
+<html lang="en"><!-- Date Written: 12/5/19         -->
+<head>          <!-- Description:  Henry Books SPA with AJAX -->
+ <title>Henry Books SPA</title>
+ <meta charset="utf-8" />
+ <meta name="viewport" content="width=device-width, initial-scale=1" />
+ <link rel="stylesheet" href="style.css" />
+ <link rel="stylesheet" href="tables.css" />
+</head>
+<body>
+<div id="wrapper">
+<header>
+ <h1>Henry Books Reports</h1>
+</header>
+<form>
+	<fieldset>
+          <p><label class="oneTwenty">Paperback</label>
+          <select name="paperback" id="paperback" size="2">
+            <option value="Y" selected>Yes</option>
+            <option value="N">No</option>
+          </select></p>
+          <p><label class="oneTwenty">Genre</label>
+          <select name="genre" id="genre">
+            <option value="0" disabled>--Select One--</option>
+            <option value="FIC">Fiction</option>
+            <option value="HOR">Horror</option>
+            <option value="MYS">Mystery</option>
+            <option value="SFI">Science Fiction</option>
+          </select></p>
+	</fieldset>
+	<fieldset>
+          <input type="button" name="submit" id="search" value="Search" />
+	</fieldset>
+    </form>
+    <aside id="feedback">
+    </aside>
+<footer><p>&copy; <span id="copyright"></span>. Ivy Tech Community College.</p></footer>
+ <script src="ajax-framework.js"></script>
+<script src="eventListeners.js"> </script>
+</div><!-- wrapper -->
+</body>
+</html>

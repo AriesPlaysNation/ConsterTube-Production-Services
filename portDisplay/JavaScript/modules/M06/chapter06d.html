@@ -1,0 +1,171 @@
+<!doctype html>				<!--	Author:		YOUR NAME   -->
+<html lang="en">			<!--	Date:		TODAY'S DATE           -->
+<head>						<!-- 	Filename	chapter06d.html    -->					
+   <meta charset="utf-8" />	<!-- Description:	Duplicating fields -->
+   <meta name="viewport" content="width=page-width, initial-scale=1.0">
+   <title>Chapter06D - Duplicating Fields</title>
+   <link rel="stylesheet" href="chapter06d.css" />
+      <script src="modernizr.custom.65897.js"></script>
+</head>
+<body>
+<div id="wrapper">
+  <header>
+    <h1>Chapter06D</h1>
+  </header>
+  <article>
+   <h2>Transferring Duplicate Field Values</h2>
+   <form>
+<fieldset id="billingAddress" class="text">
+            <legend>Billing Address</legend>
+            <label for="billFName">First Name</label>
+            <input id="billFName" name="BillingFirstName" type="text" required="required" />
+            <label for="billLName">Last Name</label>
+            <input id="billLName" name="BillingLastName" type="text" required="required" />
+            <label for="billStreet">Street Address</label>
+            <input id="billStreet" name="BillingStreet" type="text" required="required" />
+            <label for="billCity">City</label>
+            <input id="billCity" name="BillingCity" type="text" required="required" />
+            <label for="billState">State</label>
+            <select id="billState" name="BillingState">
+               <option value="AL">AL</option>
+               <option value="AK">AK</option>
+               <option value="AZ">AZ</option>
+               <option value="AR">AR</option>
+               <option value="CA">CA</option>
+               <option value="CO">CO</option>
+               <option value="CT">CT</option>
+               <option value="DE">DE</option>
+               <option value="DC">DC</option>
+               <option value="FL">FL</option>
+               <option value="GA">GA</option>
+               <option value="HI">HI</option>
+               <option value="ID">ID</option>
+               <option value="IL">IL</option>
+               <option value="IN">IN</option>
+               <option value="IA">IA</option>
+               <option value="KS">KS</option>
+               <option value="KY">KY</option>
+               <option value="LA">LA</option>
+               <option value="ME">ME</option>
+               <option value="MD">MD</option>
+               <option value="MA">MA</option>
+               <option value="MI">MI</option>
+               <option value="MN">MN</option>
+               <option value="MS">MS</option>
+               <option value="MO">MO</option>
+               <option value="MT">MT</option>
+               <option value="NE">NE</option>
+               <option value="NV">NV</option>
+               <option value="NH">NH</option>
+               <option value="NJ">NJ</option>
+               <option value="NM">NM</option>
+               <option value="NY">NY</option>
+               <option value="NC">NC</option>
+               <option value="ND">ND</option>
+               <option value="OH">OH</option>
+               <option value="OK">OK</option>
+               <option value="OR">OR</option>
+               <option value="PA">PA</option>
+               <option value="RI">RI</option>
+               <option value="SC">SC</option>
+               <option value="SD">SD</option>
+               <option value="TN">TN</option>
+               <option value="TX">TX</option>
+               <option value="UT">UT</option>
+               <option value="VT">VT</option>
+               <option value="VA">VA</option>
+               <option value="WA">WA</option>
+               <option value="WV">WV</option>
+               <option value="WI">WI</option>
+               <option value="WY">WY</option>
+            </select>
+            <label for="billZip">Zip</label>
+            <input id="billZip" name="BillingZip" type="number" required="required" />
+            <label for="billPhone">Phone</label>
+            <input id="billPhone" name="BillingPhone" type="tel" required="required" />
+            <div class="errorMessage"></div>
+         </fieldset>
+         <fieldset id="deliveryAddress" class="text">
+            <legend>Delivery Address</legend>
+            <div class="checks">
+               <input id="sameAddr" name="SameAddress" type="checkbox" />
+               <label for="sameAddr">same as billing address</label>
+            </div>
+            <label id="clearBoth" for="delivFName">First Name</label>
+            <input id="delivFName" name="DeliveryFirstName" type="text" required="required" />
+            <label for="delivLName">Last Name</label>
+            <input id="delivLName" name="DeliveryLastName" type="text" required="required" />
+            <label for="delivStreet">Street Address</label>
+            <input id="delivStreet" name="DeliveryStreet" type="text" required="required" />
+            <label for="delivCity">City</label>
+            <input id="delivCity" name="DeliveryCity" type="text" required="required" />
+            <label for="delivState">State</label>
+            <select id="delivState" name="DeliveryState">
+               <option value="AL">AL</option>
+               <option value="AK">AK</option>
+               <option value="AZ">AZ</option>
+               <option value="AR">AR</option>
+               <option value="CA">CA</option>
+               <option value="CO">CO</option>
+               <option value="CT">CT</option>
+               <option value="DE">DE</option>
+               <option value="DC">DC</option>
+               <option value="FL">FL</option>
+               <option value="GA">GA</option>
+               <option value="HI">HI</option>
+               <option value="ID">ID</option>
+               <option value="IL">IL</option>
+               <option value="IN">IN</option>
+               <option value="IA">IA</option>
+               <option value="KS">KS</option>
+               <option value="KY">KY</option>
+               <option value="LA">LA</option>
+               <option value="ME">ME</option>
+               <option value="MD">MD</option>
+               <option value="MA">MA</option>
+               <option value="MI">MI</option>
+               <option value="MN">MN</option>
+               <option value="MS">MS</option>
+               <option value="MO">MO</option>
+               <option value="MT">MT</option>
+               <option value="NE">NE</option>
+               <option value="NV">NV</option>
+               <option value="NH">NH</option>
+               <option value="NJ">NJ</option>
+               <option value="NM">NM</option>
+               <option value="NY">NY</option>
+               <option value="NC">NC</option>
+               <option value="ND">ND</option>
+               <option value="OH">OH</option>
+               <option value="OK">OK</option>
+               <option value="OR">OR</option>
+               <option value="PA">PA</option>
+               <option value="RI">RI</option>
+               <option value="SC">SC</option>
+               <option value="SD">SD</option>
+               <option value="TN">TN</option>
+               <option value="TX">TX</option>
+               <option value="UT">UT</option>
+               <option value="VT">VT</option>
+               <option value="VA">VA</option>
+               <option value="WA">WA</option>
+               <option value="WV">WV</option>
+               <option value="WI">WI</option>
+               <option value="WY">WY</option>
+            </select>
+            <label for="delivZip">Zip</label>
+            <input id="delivZip" name="DeliveryZip" type="number" required="required" />
+            <label for="delivPhone">Phone</label>
+            <input id="delivPhone" name="DeliveryPhone" type="tel" required="required" />
+            <div class="errorMessage"></div>
+         </fieldset>
+         <p class="noFloat">
+            <button type="button" id="orderButton" title="For testing purposes, this is NOT a submit button">Submit</button>
+         </p>
+	</form>
+	</article>
+   <footer>&copy; 2019. Ivy Tech Community College Northeast.</footer>
+   <script src="chapter06d.js"></script>
+</div><!-- wrapper -->
+</body>
+</html>

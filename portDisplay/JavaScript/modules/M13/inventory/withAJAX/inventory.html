@@ -1,0 +1,93 @@
+<!doctype html> <!-- Author:       Brad Botteron                -->
+<html lang="en"><!-- Date Written: 11/28/19               -->
+<head>          <!-- Description:  Inventory update demo with AJAX -->
+ <title>AJAX Update Record</title>
+ <meta charset="utf-8" />
+ <meta name="viewport" content="width=device-width, initial-scale=1" />
+ <link rel="stylesheet" href="inventory.css" />
+</head>
+<body>
+<div id="wrapper">
+<header>
+ <h1>Update Record</h1>
+ <h2>Step1: Let's Find the Record You Want to Update</h2>
+</header>
+<form>
+<p id="lookup">Part Number 
+<input type="text" list="currentParts" id="partNum" name="partNum" autofocus
+       size="10" maxlength="10" />
+<span class="small">(Enter part number to update and hit TAB key)</span></p>
+<datalist id="currentParts">
+</datalist>
+</form>
+<main id="update">
+<section id="ajaxResponseText"><!-- where the inventoryB.inc.php AJAX responseText will be innerHTML'd -->
+  <header>
+    <h2>Step 2: The current data for your part will appear below</h2>
+  </header>
+    <form id="form1">
+    <div>
+      <p><label class="oneTwenty">Part Number</label>
+      <input name="partNum" type="text" readonly="readonly" 
+             title="This field is READONLY" size="25" /></p>
+      <p><label class="oneTwenty">Description</label>
+      <input name="description" type="text" size="25" 
+	     maxlength="25" /></p>
+      <p><label class="oneTwenty">Unit</label>
+              <input type="radio" name="unit" value="EA"
+                     id="unit0" /> 
+            		<label class="forty" for="unit0">Each</label>
+              <input type="radio" name="unit" value="BX"
+                     id="unit1"  /> 
+            		<label class="forty" for="unit1">Box</label>
+              <input type="radio" name="unit" value="CT"
+                     id="unit2"  /> 
+            		<label class="forty" for="unit2">Carton</label>
+              <input type="radio" name="unit" value="BG"
+                     id="unit3"  /> 
+            		<label class="forty" for="unit3">Bag</label>
+	  </p>
+          <p><label class="oneTwenty">Qty on Hand</label>
+          <input name="qty" type="text" size="4" maxlength="3" /></p>
+          <p><label class="oneTwenty">Our Cost</label>
+          <input name="cost" type="text" size="7" maxlength="7" /></p>
+          <p><label class="oneTwenty">Retail Price</label>
+          <input name="price" type="text" size="7" maxlength="7" /></p>
+          <p><label class="oneTwenty">On Special</label>
+            <input type="radio" name="onSpecial" id="onSpecial0" value="0" />
+          <label class="forty" for="onSpecial0">No</label>
+            <input type="radio" name="onSpecial" id="onSpecial1" value="1" />
+          <label class="forty" for="onSpecial1">Yes</label>
+	  </p>
+          <p><label class="oneTwenty">Deleted</label>
+            <input type="radio" name="deleted" id="deleted0" value="0" />
+          <label class="forty" for="deleted0">No</label>
+            <input type="radio" name="deleted" id="deleted1" value="1" />
+          <label class="forty" for="deleted1">Yes</label>
+	  </p>
+          <p><label class="oneTwenty">Warranty Info</label>
+          <select name="warranty">
+            <option value="00" disabled>--Select One--</option>
+            <option value="30">30 days</option>
+            <option value="1Y">1 Year</option>
+            <option value="2Y">2 Years</option>
+            <option value="3Y">3 Years</option>
+            <option value="4Y">4 Years</option>
+          </select></p>
+	</div>
+	<div>
+          <input type="button" name="submit" value="Update" />
+	</div>
+    </form>
+    <aside id="feedback">
+       <h3>Results</h3>
+    </aside>
+    <hr />
+<footer><p>&copy; <span id="year"></span>. Ivy Tech Community College.</p></footer>
+</section><!-- ajax responseText -->
+    <script src="ajax-framework.js"></script>
+    <script src="inventory.js"></script>
+</main><!-- update -->
+</div><!-- wrapper -->
+</body>
+</html>

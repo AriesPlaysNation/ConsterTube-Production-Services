@@ -1,0 +1,85 @@
+<!doctype html>		<!-- Author:  Brad Botteron 		-->
+<html lang="en">	<!-- Date:  9/16/19 			-->
+<head>			<!-- Description: M03 Lab Work Order -> Adding test scores from array to the page with embedded js	-->
+  <title>Lab03</title>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="lab03.css" />
+  <script>
+  /* 	create your array of test scores here */
+  var testScores = [84, 72, 56, 84, 0, 76, 72, 68, 70];
+  var sum = 0; // Initialize sum;
+  /*	Declare your function computeAverage here.
+		Don't forget to pass it the array as a parameter.
+		The function should replace the contents of the <aside> below with
+			"Average = " followed by the computed average */
+  function computeAverage(testScores){
+    for(var i = 0; i < testScores.length; i++)
+    {
+      sum += testScores[i];
+    } // END of for loop
+    var average = sum / testScores.length; // Calculates average
+    var averageContainer = document.getElementById("avg"); // Get avg element
+    averageContainer.innerHTML = "Average = " + average + "."; // assign html text to averageContainer
+  }
+		
+  </script>
+</head>
+<body>
+<div id="wrapper">
+<header>
+ <h1>Lab03 Arrays and Flow Control</h1>
+</header>
+<main>
+<h2>Test Results</h2>
+<ul class="data">
+<script>
+/* 	Generate a list of the test scores here
+	Scores below 70% should appear red and bold (HINT: Use class=red) */
+  var scoreContainer = document.getElementById("data"); // Container for data
+  for(var i = 0; i < testScores.length; i++)
+  {
+    if(testScores[i] < 70)
+    {
+      document.write("<li class='red'>" + testScores[i] + "</li>"); // write score to screen with red and bold if below 70
+    } else if(testScores[i] <= 100) {
+      document.write("<li>" + testScores[i] + "</li>"); // write score to screen if score is 70 or above (normal)
+    } // END if statement
+  } // END for loop
+	
+</script>
+</ul>
+<aside id="avg"></aside>
+</main>
+<footer>&copy; <span id="year"></span>. Ivy Tech Community College Northeast.</footer>
+</div>
+<script>
+/* Use cross-browser compatible event listeners to execute the function computeAverage when page loads. 
+Don't forget to pass the array as a parameter.
+*/
+// Event listener to activate function computeAverage
+  if(window.addEventListener){
+    window.addEventListener("click", computeAverage(testScores), false);
+  } else if(window.attachEvent)
+  {
+    window.attachEvent("onclick", computeAverage(testScores));
+  }
+  // Getting current date
+  var currentYear = new Date().getFullYear();
+  var dateContainer = document.getElementById("year");
+  dateContainer.innerHTML = currentYear;
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+

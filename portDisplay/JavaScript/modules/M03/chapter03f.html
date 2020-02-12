@@ -1,0 +1,65 @@
+<!doctype html>	<!-- Author:		YOUR NAME           -->
+<html lang="en"><!-- Date:			TODAY'S DATE        -->
+<head>			<!-- Description:	Playing with loops  -->
+<title>Chapter03F - Loops</title>
+ <meta charset="utf-8" />    
+ <link rel="stylesheet" href="chapter03.css" />
+</head>
+<body>
+<div id="wrapper">
+<header>
+    <h1>Gettin' Loopy Wit It</h1>
+	<p>Let's investigate each of the types of loops. </p>
+</header>
+<article>
+<h2>The while loop</h2>
+<p>Test the exit condition at the top of the loop. </p>
+<ul><!-- avoiding an unbalanced tree -->
+<script>
+    var response = prompt("Do you want to play?", "Y"); // priming read...
+    while((response == "Y" || response == "y"))
+    {
+        document.write("\n <li>I like playing this game.</li>");
+        response = prompt("WHILE: Do you want to keep playing?", "Y");
+    }
+    document.write("\n<li>WHILE says, \"Goodbye!\"</li>");
+</script>
+</ul><!-- avoiding an unbalanced tree -->
+</article>
+<article>
+<h2>The do while loop</h2>
+<p>Test the exit condition at the bottom of the loop. </p>
+<ul><!-- no unbalanced trees here either -->
+<script>
+    alert("Switching from WHILE to DO/WHILE"); // for tracing purposes only
+    do{ // no priming read
+        document.write("\n<li>I like the DO/WHILE almost as much.</li>");
+        response = prompt("DO/WHILE: Do you want to keep playing?", "Y");
+    } while((response == "Y" || response == "y"))
+    document.write("\n<li>DO/WHILE says, \"Goodbye\" too.");
+</script>
+</ul><!-- no unbalanced trees here either -->
+</article>
+<article>
+<h2>The for loop</h2>
+<p>Execute a finite number of iterations.</p> 
+<script>
+    alert("Switching from DO/WHILE to FOR"); // for tracing purposes only
+    document.write("\n<ol>\n"); // no unbalanced trees here
+    for(var i = 1; i <= 10; i++)
+    {
+        document.write("<li>Playing the game...</li>\n");
+    }
+    document.write("</ol\n"); // no unbalanced trees here
+    document.write("<p>FOR says, \"I'm outta here!\"</p>\n");
+</script>
+</article>
+<footer>&copy;<span id="year"></span>. Ivy Tech Community College Northeast.</footer>
+</div>
+<script>
+    var currentYear = new Date().getFullYear();
+    var dateContainer = document.getElementById("year");
+    dateContainer.innerHTML = currentYear;
+</script>
+</body>
+</html>

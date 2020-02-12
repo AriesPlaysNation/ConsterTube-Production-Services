@@ -1,0 +1,108 @@
+/* External Style Sheet for Chapter 9 */
+
+@import url(fonts/appleberry.css); 
+
+#wrapper{	width:900px;
+		border:4px solid rgb(0,102,153);
+		padding:20px;
+		margin:auto;
+	}
+
+body	{	background-color: rgb(255,255,255);
+	}
+
+header,
+article	{	background-color: rgba(255,255,255,0.5);
+		color: rgb(0,0,0);
+		padding: 10px;
+		border-radius: 7px;
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+		
+h1	{	font: 2.5em AppleberryRegular, Helvetica, sans-serif; 
+		margin-top: 0px;
+		margin-bottom: 20px;
+		color: rgb(51,51,51);
+		text-shadow: 1px 1px 1px rgb(127,127,127);
+	}
+
+h2	{	font: 1.2em AppleberryRegular, Helvetica, sans-serif;
+		margin-bottom: 20px;
+		text-shadow: 1px 1px 1px rgb(255,255,255);
+	}
+
+#double	{	font: 1.2em AppleberryRegular, Helvetica, sans-serif;
+	margin-bottom: 20px;
+	display: inline-block;
+}
+
+li,p 	{
+		margin-top:20px;
+		font: 1em "Courier New", Courier, monospace;
+		color: rgb(0,0,0);
+	}
+li	{	margin-top: 0px;
+		margin-bottom: 0px;
+	}
+pre	{	font: 1em "Courier New",Courier,monospace;
+		margin: 10px;
+		padding: 15px; 
+		background-color: rgb(255,255,255);
+		color: rgb(0,0,255);
+		border: 1px dotted rgb(0,0,0);
+	}
+		
+aside	{	padding: 2px 5px 20px;
+		background-color: rgb(255,255,255);
+	}
+
+footer	{	margin-top: 20px; 
+	}
+
+#errorMsg{	padding: 5px;
+		color: rgb(255,255,255);
+		background-color: rgb(255,0,0);
+		display: none;
+		width: 200px;
+	 }
+
+.oneEighty{	width: 180px; 
+		display: block;
+		float: left;
+		clear: left;
+	}
+
+.images
+{
+	width: 100px;
+	height: auto;
+}
+
+.radiobtn
+{
+	margin-top: -90px;
+	vertical-align: middle;
+}
+
+#cookieJar
+{
+	overflow: auto;
+}
+
+#placeholderImg
+{
+	float: right;
+	width: 200px;
+	height: auto;
+	border: solid 1px black;
+	margin-bottom: 20px;
+}
+
+#article
+{
+	width: 40vw;
+	display: inline-block;
+	margin-left: 10px;
+	margin-bottom: 100px;
+}

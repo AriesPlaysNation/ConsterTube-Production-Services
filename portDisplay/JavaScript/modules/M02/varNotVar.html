@@ -1,0 +1,29 @@
+<!doctype html>		<!-- Author: 		YOUR NAME        -->
+<html>			<!-- Date Written:	TODAY'S DATE       -->
+<head>			<!-- Description:	Examine behavior of var -->
+  <title>To var or not to var</title>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="varNotVar.css" />
+</head>
+<body>
+<section id="wrapper">
+<header>
+  <h1>To var or not to var</h1>
+</header>
+  <script src="varNotVar.js"></script>
+<article>
+  <p>If you use <code>var</code> the variable is declared within the scope you are in (e.g. of the function).
+    If you don't use <code>var</code>, the variable bubbles up through the layers of scope until it encounters a variable by the given name or the global object, where it then attaches.
+    It is then very similar to a global variable.</p>
+  <p>Assigning to a variable without using <code>var</code> does not make it global. It causes JavaScript to traverse up the scope chain, eventually ending up at the global object
+    if the variable was not used anywhere before. If the variable was declared using <code>var</code> somewhere before global, that's the scope that will be used.
+    It's also an integral part of how JavaScript works and what makes it really powerful. </p>
+<p>In the global scope then there's no difference with or without var. In a function then <code>var</code> will create a local variable, no <code>var</code> will look up the scope chain
+  (bubble up the DOM) until it finds the variable or hits the global scope (at which point it will create it).</p>
+</article>
+<footer>
+<p>&copy; 2019. <a href="http://stackoverflow.com/questions/2485423/javascript-is-using-var-to-declare-variables-optional">Source</a></p>
+</footer>
+</section>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!doctype html>	<!-- Author:		YOUR NAME           -->
+<html lang="en"><!-- Date:			TODAY'S DATE        -->
+<head>			<!-- Description:	Manipulating Arrays -->
+<title>Chapter03E - ByTagName</title>
+ <meta charset="utf-8" />    
+ <link rel="stylesheet" href="chapter03.css" />
+</head>
+<body>
+<div id="wrapper">
+    <h1>getElementsByTagName()</h1>
+<article>
+	<h2>Creates an Array of the results</h2>
+	<p>Once we collect the elements into an array, we can process each element, one at a time.</p>
+</article>
+<aside>
+<h2>Here's a list of topics by week:</h2>
+<ol> 
+  <li>Introduction to JavaScript</li>
+  <li>Functions, Data Types, and Operators</li>
+  <li>Arrays and Flow Control</li>
+  <li>The Document Object Model</li>
+  <li>Enhancing and Validating Forms</li>
+  <li>Review</li>
+  <li>EXAM</li>
+  <li>Object-oriented JavaScript</li>
+  <li>Strings and Arrays</li>
+  <li>State Information and Security</li>
+  <li>AJAX</li>
+  <li>Review</li>
+  <li>EXAM</li>
+</ol>
+</aside>
+<script>
+  var listItems = []; // Establish an array of size 0
+  // Create an array of all LI items on the page
+  listItems = document.getElementsByTagName("li");
+  // Change the contents of the third LI element in the array
+  listItems[2].innerHTML = "NO CLASS THIS WEEK"; // Changes contents of index 2 item in li
+  for(var i = 0; i < listItems.length; i++)
+  { // Loop through all elements in the array
+    if (listItems[i].innerHTML == "EXAM") // look for an element containing "EXAM"
+    { // Replace the item's content with red EXAM with asterisks
+      listItems[i].innerHTML = "<span style=\"color: rgb(255, 0, 0)\">* * * EXAM * * *</span>\n";
+    } // END if statement
+  } // END for loop
+</script>
+<p>NOTE: This is not the actual schedule for this class.</p>
+<footer>&copy;<span id="year"></span>. Ivy Tech Community College Northeast.</footer>
+</div>
+<script>/* Update the copyright year */
+  var currentYear = new Date().getFullYear(); // variable declaration
+  var dateContainer = document.getElementById("year");
+  dateContainer.innerHTML = currentYear;
+</script>
+</body>
+</html>

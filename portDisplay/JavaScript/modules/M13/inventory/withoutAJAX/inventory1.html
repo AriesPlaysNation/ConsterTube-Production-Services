@@ -1,0 +1,26 @@
+<!doctype html>   <!--  Author:	Barry J. Sullens            -->
+<html lang="en">  <!-- Date:	November 24, 2019           -->
+<head>            <!-- Desc:	Step 1 of Inventory Update  -->
+ <title>Step 1: Inventory Lookup (Update)</title>
+ <meta charset="utf-8" />
+ <link rel="stylesheet" href="inventory.css" />
+</head>
+<body id="step1">
+<div id="wrapper">
+<header>
+ <h1>Inventory Lookup (Update)</h1>
+</header>
+<form action="inventory2.php" method="post">
+<fieldset>
+<legend>Step 1: Lookup Record</legend>
+<p>What is the part number for the record you wish to update?</p>
+<label class="oneForty">Part Number: </label>
+<input type="text" id="partNum" name="partNum" size="10" maxlength="10" autofocus />
+</fieldset>
+<input type="reset"  name="reset"  value="Clear" />
+<input type="submit" name="submit" value="Search" />
+</form>
+<footer>&copy; 2015-2019. Ivy Tech Community College.</footer>
+</div><!-- wrapper -->
+</body>
+</html>

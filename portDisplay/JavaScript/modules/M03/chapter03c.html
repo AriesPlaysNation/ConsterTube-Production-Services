@@ -1,0 +1,82 @@
+<!doctype html>	<!-- Author:		YOUR NAME           -->
+<html lang="en"><!-- Date:			TODAY'S DATE        -->
+<head>			<!-- Description:	Manipulating Arrays -->
+<title>Chapter03C - Arrays</title>
+<meta charset="utf-8" />
+<link rel="stylesheet" href="chapter03.css" />
+</head>
+<body>
+<div id="wrapper">
+<script>
+	var animalArray = ["dog", "cat", "pig", "horse", "sheep"]; // Populate Array
+	function displayArray() {
+		var theDisplay = document.getElementById("display"); // Name the display element
+		var theList = "Array currently contains: <code>"; // Initialize response string
+		for(var i = 0; i < animalArray.length; i++) {
+			theList += (animalArray[i] + " "); // Concatenate array element to string
+		} // END for loop
+		theDisplay.innerHTML = theList + "</code>"; // Replace display's content with response string
+	} // END of function
+</script>
+<h3>Array Demo</h3>
+<p id="display">Array initially contains: <code>dog cat pig horse sheep</code></p>
+<p><em>Click the buttons sequentially to manipulate the array</em></p>
+<p><input id="btn1" type="button" value="Show array index 2" /></p>
+<p><input id="btn2" type="button" value="Show array index 3" /></p>
+<p><input id="btn3" type="button" value="Add 'goat' at end of array" 
+		  title="There will be no visible change."           /></p>
+<p><input id="btn4" type="button" value="Display Array"      /></p>
+<p><input id="btn5" type="button" value="Show array index 5" /></p>
+<p><input id="btn6" type="button" value="Sort array" 
+		  title="There will be no visible change."           /></p>
+<p><input id="btn7" type="button" value="Display Array"      /></p>
+<p><input id="btn8" type="button" value="Show array index 5" /></p>
+</div>
+<script> // Assign vars to buttons
+	var button1 = document.getElementById("btn1"); var button2 = document.getElementById("btn2");
+	var button3 = document.getElementById("btn3"); var button4 = document.getElementById("btn4");
+	var button5 = document.getElementById("btn5"); var button6 = document.getElementById("btn6");
+	var button7 = document.getElementById("btn7"); var button8 = document.getElementById("btn8");
+	if(window.addEventListener) { // More anonymous functions. Why is that again?
+		button1.addEventListener("click", function() { alert(animalArray[2]);}, false);
+		button2.addEventListener("click", function() { alert(animalArray[3]);}, false);
+		button3.addEventListener("click", function() { animalArray.push("goat");}, false);
+		button4.addEventListener("click", function() { displayArray();}, false);
+		button5.addEventListener("click", function() { alert(animalArray[5]);}, false);
+		button6.addEventListener("click", function() { animalArray.sort();}, false);
+		button7.addEventListener("click", function() { displayArray();}, false);
+		button8.addEventListener("click", function() { alert(animalArray[5]);}, false);
+	} else if(window.attachEvent){
+		button1.attachEvent("onclick", function() { alert(animalArray[2]);});
+		button2.attachEvent("onclick", function() { alert(animalArray[3]);});
+		button3.attachEvent("onclick", function() { animalArray.push("goat");});
+		button4.attachEvent("onclick", function() { displayArray();});
+		button5.attachEvent("onclick", function() { alert(animalArray[5]);});
+		button6.attachEvent("onclick", function() { animalArray.sort();});
+		button7.attachEvent("onclick", function() { displayArray();});
+		button8.attachEvent("onclick", function() { alert(animalArray[5]);});
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+</body>
+</html>

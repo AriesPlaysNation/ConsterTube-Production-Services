@@ -1,0 +1,53 @@
+<!doctype html><!-- Author:      	Brad Botteron -->
+<html lang="en"><!-- Date Written: 	08/30/2019 -->
+<head>          <!-- Descripition:	Lab 01 Autobiography -->
+  <title>Lab 01 Assignment -- Autobiography</title>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="lab01.css" />
+    <script src="lab01.js"></script>
+</head>
+<body>
+<div id="wrapper">
+<header>
+<h1>Insert meaningful heading here</h1>
+<h2>Insert a meaningful subheading here</h2>
+</header>
+<main>
+<h2>Insert another meaningful header here</h2>
+<p>
+  I am currently attending Ivy Tech Community College to achieve my Associate of Applied Science in Software Development! I am currently 28 years old.
+  I have 4 amazing children, 2 boys and 2 girls. Their names are Bailey, Bristol, Emmett, and Memphis. My dream is to start my own programming business and to create
+  new and exciting applications and websites for the community!
+</p>
+<p>
+  Growing up I bounced back and forth between my mom and dad's house. We always had the latest technology in both houses and computers have fascinated me since as far back
+  as I can remember! Going through middle and high school I was the guy everyone came to with help on their PC's. Even though I didn't know that much back then, I always
+  loved to help everyone out and "tinker" with computers. As I progressed into my junior year I went to Vantage Career Center for Network Systems and I wasn't very thrilled
+  for most of the class. I absolutely hated the hardware side of computers but I just couldn't get enough of VB.NET, Python, and little Cobol! Today, I'm still extremely
+  fascinated with computers and when I'm not asleep, at work, or playing with my kids I can usually be found in my office inside my house! I have plans for the shed to expand it
+  and add a little office onto the side of it for a server room or workstation.
+</p>
+<script>
+
+  document.write("<p>Author: Brad Botteron</p>\n");
+  document.write("<p>My birthday is: ");
+  document.write(jsBirthMonth + " " + jsBirthDay + " " + jsBirthYear + "\n");
+
+</script>
+</main>
+<footer>
+<p>&copy; <span id="year"></span>. Ivy Tech Community College Northeast.</p>
+</footer>
+</div><!-- wrapper -->
+<script>
+
+  // this section calls the function when the event "page load" occurs
+    if(window.addEventListener){
+        window.addEventListener("load", insertContent, false);
+    } else if (window.attachEvent){
+        window.attachEvent("onload", insertContent());
+    } // END IF ADDEVENTLISTENER
+
+</script>
+</body>
+</html>

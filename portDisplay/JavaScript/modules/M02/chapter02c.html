@@ -1,0 +1,118 @@
+<!doctype html>		<!-- Author:		YOUR NAME       -->
+<html>			<!-- Date Written:	TODAY'S DATE      -->
+<head>			<!-- Description:	Working with Operators -->
+  <title>02C - Operators</title>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="chapter02.css" />
+</head>
+<body>
+<div id="wrapper">
+<h1>Operators</h1>
+<p>JavaScript operators are binary or unary. A binary operator requires an operand before and after the operator.
+  The equal sign in the statement myNumber = 100; is an example of a binary operator. A unary operator requires just a single operand either before or after the operator.</p>
+<main>
+<article>
+<h2>Arithmetic Operators</h2>
+<div><code>x = 21</code></div>
+<div><code>y = 7</code></div>
+<ul class="operators">
+  <script>
+    var x = 21;
+    var y = 7;
+    var sum = x + y;
+    var difference = x - y;
+    var mult = x * y;
+    var quotient = x / y;
+    var remainder = x % y;
+    x++;
+    y--;
+    var nextX = x;
+    var prevY = y;
+
+    document.write("\n<li> x + y = " + sum + "</li>\n");
+    document.write("\n<li> x - y = " + difference + "</li>\n");
+    document.write("\n<li> x * y = " + mult + "</li>\n");
+    document.write("\n<li> x / y = " + quotient + "</li>\n");
+    document.write("\n<li> x % y = " + remainder + "</li>\n");
+    document.write("\n<li> x++ = " + nextX + "</li>\n");
+    document.write("\n<li> y-- = " + prevY + "</li>\n");
+  </script>
+</ul>
+</article>
+<article>
+<h2>Assignment Operators</h2>
+<p>An assignment operator is used for assigning a value to a variable. You have already used the most common assignment operator, the equal sign (=),
+  to assign values to variables you declared using the <code>var</code> statement. The equal sign assigns an initial value to a new variable or assigns a new value to an existing variable.
+  JavaScript includes other assignment operators in addition to the equal sign. Each of these additional assignment operators, called compound assignment operators, performs mathematical
+  calculations on variables and literal values in an expression, and then assigns a new value to the left operand.</p>
+<div><code>x = 5</code></div>
+<div><code>y = 4</code></div>
+<div><code>string1 = "Hello "</code></div>
+<div><code>string2 = "World"</code></div>
+<ul class="operators">
+  <script>
+    var x = 5;
+    var y = 4;
+    x += y; // x is now 9
+    string1 = "Hello ";
+    string2 = "World";
+    string1 += string2; // string1 is now "Hello World"
+    document.write("\n<li>x += y stores " + x + " in the variable x </li>\n");
+    document.write("\n<li> string1 += string2 stores " + string1 + " in the variable string1</li>\n");
+  </script>
+</ul>
+</article>
+<article>
+<h2>Comparison Operators</h2>
+<p>A comparison operator, or relational operator, is used to compare two operands and determine if one value is greater than another, etc. A Boolean value of true or false is returned after two operands are compared.</p>
+<div><code>x = 5</code></div><!-- change this to 3 after running as 5 -->
+<div><code>y = 4</code></div>
+<ul class="operators">
+  <script>
+    var x = 3; // change this to 3 after running as 5
+    var y = 4;
+    x > y ? result = "condition is true" : result = "condition is false";
+    document.write("\n<li> Testing the condition <strong>x > y</strong></li>\n");
+    document.write("<li>returns the result \"" + result + "\"</li>\n");
+    // Change the value of x in both the DIV and the VAR above from 5 to 3 and run again
+  </script>
+</ul>
+</article>
+<article>
+<h2>Logical Operators</h2>
+<p>Logical operators are used to modify Boolean values or specify the relationship between operands in an expression that results in a Boolean value.
+  For example, a script for an automobile insurance company may need to determine whether a customer is male and under 25 in order to determine the correct insurance quote.
+  As with comparison operators, a Boolean value of true or false is returned after two operands are evaluated.</p>
+
+<ul class="operators">
+  <script>
+    var gender = "M" // Change this to "F" after running as "M"
+    var age = 21; // Try different values after running as 21
+    var highPremium = gender === "M" && age < 25;
+    document.write("\n<li> Testing the condition " + gender + " && " + age + "</li>\n");
+    document.write("<li>returns highPremium = \"" + highPremium + "\"</li>\n");
+  </script>
+</ul>
+</article>
+</main>
+<footer>
+<p>Some text taken from Vodnik/Gosselin textbook.</p>
+<p>&copy; 2019. Ivy Tech Community College. </p>
+</footer>
+</div><!-- wrapper -->
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

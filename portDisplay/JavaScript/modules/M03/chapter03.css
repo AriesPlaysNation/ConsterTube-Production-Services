@@ -1,0 +1,42 @@
+/* External Style Sheet for Chapter 3 */
+
+@import url("fonts/armwrestler.css");
+
+#wrapper {	width:500px;
+		border:4px solid rgb(0,102,153);
+		padding:20px;
+		margin:2.5em auto 20px auto;
+	 } 
+#wrapper input { margin-right:20px; }
+
+#wrapper input[type="button"] 
+	{ 	margin-top:10px; 
+		width: 215px;
+	}
+
+p {		margin-top:20px;
+		font-weight: bold;
+		color: blue;
+  }
+
+code	{	font-weight: bold;
+		font-size: 1.1em;
+		color: red;
+	}
+h1,h2   { 	color: rgb(0,0,0);
+          	padding: 5px;
+             	padding-left: 15px;
+             	text-shadow: 1px 1px 2px rgb(255,255,255);
+             	font: 2em 'ArmWrestlerBold', Arial, sans-serif;
+		margin-bottom: 0px;
+        }
+
+h2      { 	font-size: 1.2em; 
+		margin-top: 0px;
+        }
+
+footer	{	font-size: 0.7em;}
+
+.noMargin	{	margin-top: 0px;
+			margin-bottom: 0px;
+		}

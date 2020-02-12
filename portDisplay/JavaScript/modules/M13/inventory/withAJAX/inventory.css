@@ -1,0 +1,124 @@
+/* Author:             Barry J. Sullens                       */
+/* Date Written:       November 24, 2019                      */
+/* Description:        External stylesheet for Inventory Demo */
+
+@import url("/fonts/oswald.css");
+@import url("/fonts/armwrestler.css");
+
+  body     { background-color: rgb(250,250,250);
+             font: 1em 'OswaldLight',Arial,Helvetica;
+           }
+
+  #wrapper { width: 960px;
+             margin-left: auto;
+             margin-right: auto;
+           }
+
+  p#lookup { color: rgb(0,0,0); 
+	   }
+
+  .small    { font-size: 0.8em; }
+
+  select,
+  option,
+  input     { font: 1em 'Courier New',Courier,monospace; }
+
+  header,
+  footer   { background-color: rgb(230,237,247);
+             padding: 5px;
+             padding-left: 15px;
+             border-radius: 20px / 60px;
+             box-shadow: 5px 5px 7px rgb(102,102,102);
+             text-shadow: 2px 5px 2px rgb(204,204,204);
+             font-family: 'OswaldLight',Arial,Helvetica;
+             margin: 10px 0px 20px 0px;
+           }
+
+hr	{	color: rgb(0,102,0);
+		clear: both; 
+		width: 0px;
+	}
+
+h1	{	margin-top: 0px; 
+		margin-bottom: 0px; 
+                font: 1.7em 'ArmWrestlerBold',Arial,Helvetica;
+	}
+h2  {  margin-top: 0px;
+       margin-bottom: 0px;
+    }
+h3	{	margin-top: 0px; 
+		margin-bottom: 5px;
+	}
+th	{	color: #000;
+		background-color: rgb(230,237,247);
+		text-align: left;
+		padding-right: 10px;
+		border-radius: 5px;
+	}
+	
+td	{	color: #000;
+		background-color: rgba(204,204,204,0.5);
+		padding-left: 10px;
+		border-radius: 5px;
+	}
+		
+article	{	margin-top: 20px; }
+
+label	{	display: block; }
+
+table	{	float: left;
+		margin-top: 5px;
+		width: 250px;
+		margin-bottom: 20px;
+		}
+
+#form1,
+#feedback	{	float: right;
+			width: 310px;
+			height: 350px;
+			padding: 20px 40px;
+			margin-left: 20px;
+			border: 1px solid rgb(0,0,0);
+			border-radius: 5px;
+			background-color: rgba(204,204,204,0.5);
+		}
+
+#form1		{	width: 440px; 
+			background-image: none;
+			float: left;
+        	}
+
+input		{	display: block;
+			float: left;
+		}
+
+.radio		{	display: inline;
+			clear: both;
+		}
+
+.oneTwenty	{	width: 120px;
+			display: block;
+			float: left;
+		}
+.oneTen		{	width: 110px; 
+			display: block;
+			float: left;
+		}
+.forty		{	width: 40px; 
+			display: block;
+			float: left;
+		}
+
+p		{	clear: both; }
+
+input[name="reset"],
+input[name="unit"],
+input[name="submit"]
+		{	display: inline;
+			margin-right: 10px;
+		}
+input[id="partNum"]
+		{	display: inline;   
+			float: none;
+		}
+form p		{	line-height: 200%; }

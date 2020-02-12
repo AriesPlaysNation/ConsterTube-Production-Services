@@ -1,0 +1,84 @@
+/*
+	Author: 		YOUR NAME
+	Date:			October 25, 2019
+	Description:	External Style Sheet for Chapter 7
+*/
+@import url(fonts/lato.css); 
+@import url(fonts/armwrestler.css); 
+@import url(fonts/appleberry.css); 
+
+#wrapper	{	width:900px;
+				border:4px solid rgb(0,102,153);
+				padding:20px;
+				margin:auto;
+			}
+body			{	background-color: rgb(255,255,255);
+				font: 1em LatoRegular, Arial, Helvetica, sans-serif;
+			}
+h1			{	font: 2em AppleberryRegular,Arial, Helvetica, sans-serif; 
+				margin-bottom: 0px;
+				text-shadow: 1px 1px 1px rgb(255,255,255);
+			}			
+h2,h3		{	font: 1.4em Arial, Helvetica, sans-serif; 
+				font-weight: bold;
+				margin-top: 10px;
+				text-shadow: 1px 1px 1px rgb(255,255,255);
+			}
+h3			{	font-size: 1.2em; 
+				font-weight: normal;
+			}
+article		{	color: rgb(0,0,0);
+				padding: 10px;
+				border-radius: 7px;
+			}		
+p 			{	margin-top:20px;
+				color: rgb(0,0,0);
+				text-shadow: 1px 1px 1px rgb(255,255,255);
+			}
+li			{	font: 1em "Courier New", Courier, monospace;
+				margin-top: 0px;
+				margin-bottom: 0px;
+			}
+pre			{	font: 1em "Courier New",Courier,monospace;
+				margin: 10px;
+				padding: 15px; 
+				background-color: rgb(250,250,250);
+				color: rgb(0,0,255);
+				width: 50%;
+				border: 1px dotted rgb(0,0,0);
+			}
+code			{	font: 1em "Courier New",Courier,monospace; 
+				color: rgb(0,0,255);
+			}
+footer		{	margin-top: 20px; 	}
+
+/* For chapter07b.html */
+
+aside				{	border: 1px solid blue;
+					background-color: rgb(204,204,204);
+					box-shadow: 1px 1px 2px rgb(51,51,51);
+					width: 300px;
+					height: 200px;
+					margin-bottom: 50px;
+				}
+.floatleft		{	float: left; 	}
+.floatright		{	float: right;	}
+
+#one			{	text-align: center;	}
+#two			{	text-align: center;	}
+#buttons		{	margin-left: auto;
+					margin-right: auto;
+					margin-bottom: 25px;
+					width: 300px;
+					padding: 25px;
+					border-radius: 10px;
+					box-shadow: 2px 2px 2px rgb(27,27,27);
+					background-color: rgb(80,80,80);
+				}
+#guitar1		{	margin-right: 400px; }
+
+/* For chapter07e.html */
+#result			{	padding: 5px;
+					border: 1px dotted rgb(0,0,255);
+					width: 30%;
+				}

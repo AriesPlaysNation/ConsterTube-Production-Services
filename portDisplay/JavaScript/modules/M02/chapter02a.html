@@ -1,0 +1,77 @@
+<!doctype html>	<!-- Author:		YOUR NAME       -->
+<html>		<!-- Date Written:	TODAY'S DATE      -->
+<head>		<!-- Description:	Working with functions -->
+  <title>02A - Functions</title>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="chapter02.css" />
+  <script>
+    function addByLines()
+    {
+      var namedByLine = document.getElementById("byLine1");
+      var anonByLine = document.getElementById("byLine2");
+      var returnByLine = document.getElementById("byLine3");
+
+      namedByLine.innerHTML = "a set of related statements that is assigned a name";
+      anonByLine.innerHTML = "a set of related statements no name is assigned to it";
+      returnByLine.innerHTML = "a statement that returns a value to the statement that called the function";
+    } // end of ADDBYLINES
+
+    function averageNums(a, b, c, d, e)
+    {
+      var sumOfNums = a + b + c + d + e;
+      var result = sumOfNums / 5;
+      return result;
+    } // END OF AVERAGENUMS
+  </script>
+</head>
+<body>
+<div id="wrapper">
+<h1>Working with Functions</h1>
+<button id="help" type="button" >Help</button>
+<main>
+<article>
+<h2>Named Function</h2>
+<p id="byLine1"></p>
+<p>A named function is a set of related statements that is assigned a name. You can use this name to reference, or call, this set of statements in other parts of your code. Generally, you use a named function when you want to be able to reuse the function statements within your code.</p>
+</article>
+<article>
+<h2>Anonymous Function</h2>
+<p id="byLine2"></p>
+<p>The statements in an anonymous function work only in a single context&mdash;the place in the code where they are located. You cannot reference an anonymous function anywhere else in your code. Generally, you use an anonymous function for statements that you need to run only once.</p>
+</article>
+<article>
+<h2>The <code>return</code> Statement</h2>
+<p id="byLine3"><p>
+<p>In many instances, you may want your code to receive the results from a called function and then use those results in other code. For instance, consider a function that calculates the average of a series of numbers that are passed to it as arguments. Such a function would be useless if your code could not print or use the result elsewhere. As another example, suppose that you have created a function that simply prints the name of a student. Now suppose that you want to alter the code so it uses the student name in another section of code. You can return a value from a function to a calling statement by assigning the calling statement to a variable.</p>
+<p>The following shows the results of a function that uses the <code>return</code> statement.
+  <script>
+    var returnedValue = averageNums(15, 60, 75, 90, 10);
+    document.write("The function returned " + returnedValue + ".</p>\n");1
+    // Check error log for unbalanced tree warning
+  </script>
+</article>
+</main>
+<footer>
+<p>Some text taken from Vodnik/Gosselin textbook.</p>
+<p>&copy; 2019. Ivy Tech Community College. </p>
+</footer>
+</div><!-- wrapper -->
+<script>
+  // This section calls the function when the event "page load" occurs
+  if(window.addEventListener)
+  {
+    window.addEventListener("load", addByLines, false);
+  } else if (window.attachEvent)
+  {
+    window.attachEvent("onload", addByLines);
+  } // END IF ADDEVENTLISTENER
+  var helpButton = document.getElementById("help"); // another event listener
+  helpButton.addEventListener("click", function() {
+    window.alert("HELP\nIn JavaScript programming, you can write your own procedures, called functions. A function is a related group of " +
+            "JavaScript statements that are executed as a single unit. A function, like all JavaScript code, must be contained within a script element." +
+            " in the following section, you'll learn more about incorporating functions in your scripts.");}, false); // for this event, sorry: no IE compatibility.
+</script>
+</body>
+</html>
+
+

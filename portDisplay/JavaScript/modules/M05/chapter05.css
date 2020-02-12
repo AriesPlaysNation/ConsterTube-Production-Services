@@ -1,0 +1,79 @@
+/* external style sheet for Chapter 5 Demos 
+
+	NOTE: Use of rgb() color 
+	      styled SUBMIT and RESET buttons
+	      style inside INPUT textboxes
+	      Use of @import to reference @font-face style sheets
+*/
+@import url('fonts/armwrestler.css');
+@import url('fonts/mplus1m.css');
+
+  #wrapper { width: 70%;
+             margin-left: auto;
+             margin-right: auto;
+	     border: 4px solid rgb(0,102,153);
+	     margin: 2.5em auto 20px auto;
+           }
+
+
+  h1       { color: rgb(0,0,0);
+             padding: 5px;
+             padding-left: 15px;
+             text-shadow: 1px 1px 2px rgb(255,255,255);
+             font: 2em 'ArmWrestlerBold', Arial, sans-serif;
+             margin-bottom: 50px; 
+           }
+
+ h2        { font-size: 1.2em; 
+             color: #000;
+             opacity: 0.6;
+             padding: 5px;
+             text-shadow: 1px 1px 2px rgb(255,255,255);
+             font-family: Arial;
+             margin-top: 0px; 
+           }
+  footer,
+  main,
+  form     { background-color: rgb(220,220,220);
+	     width: 85%;
+             color: rgb(0,0,0);
+             font: 1em 'M1mregular', Arial, sans-serif;
+             opacity: 0.9;
+             margin-top: 10px;
+             margin-bottom: 50px;
+             padding: 15px;
+             padding-left: 20px;
+             padding-bottom: 20px;
+             border-radius: 15px;
+             box-shadow: 3px 3px 4px rgb(136,136,136);
+	     border: 1px solid rgb(255,255,255);
+             text-shadow: 1px 1px 2px rgb(255,255,255);
+           }
+
+  .topalign { vertical-align: top; }
+
+  #formtable td	   { padding-right: 20px; 
+  	 	     padding-top: 30px; }
+
+
+  input[type="reset"],
+  input[type="submit"]	{ font: 0.7em 'ArmWrestlerBold'; 
+			  text-shadow: 1px 1px 1px rgb(255,255,255);
+			}
+
+  code	{	font-size: 1em;
+		font-weight: bold;
+		color: rgb(0,0,127);
+		padding-left: 3px;
+	}
+
+.error	{	color: rgb(255,0,0);
+		font-size: 2.0em;
+		font-weight: bold;
+	}
+mark    {       background-color: rgb(255,255,0);
+                padding-left: 2px;
+                padding-right: 2px;
+        }
+
+h1,aside,p,footer,ul,nav,main,ol { margin-left: 50px; }

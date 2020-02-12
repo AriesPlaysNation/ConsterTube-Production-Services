@@ -1,0 +1,35 @@
+/* Author:             YOUR NAME                        */
+/* Date Written:       TODAY'S DATE                       */
+/* Description:        External style sheet for zip codes demo */
+
+@import url("fonts/chunkfive.css");
+@import url("fonts/profont.css");
+
+#wrapper	{	width: 350px;
+			margin: auto;
+			padding: 20px;
+			border: 1px solid rgb(0,0,0);
+			border-radius: 4px;
+			background-color: rgb(240,240,240);
+			box-shadow: 2px 2px 2px rgb(102,102,102);
+		}
+
+body		{	font: 1em ProFontWindowsRegular;
+			background-color: rgb(250,250,250);
+		}
+
+h1		{	font: 1.7em ChunkFiveRegular;
+			margin-bottom: 0px;
+			text-shadow: 1px 1px 2px rgb(204,204,204);
+		}
+
+h2		{	font: 1em ChunkFiveRegular;
+			margin-top: 0px;
+			text-shadow: 1px 1px 2px rgb(204,204,204);
+		}
+.block,
+input,
+label		{	display: block; }
+.button		{	display: inline; }
+.inline		{	display: inline; }
+.bold		{	font-weight: bold; }

@@ -1,0 +1,36 @@
+/* Chapter 06C Style Sheet */
+@import url(fonts/asongforjennifer.css); 
+
+#wrapper 	{	width:500px;
+				border:4px solid rgb(0,102,153);
+				padding:20px;
+				margin:2.5em auto 20px auto;
+			} 
+
+header h1 		{	font-family: ASongForJenniferBold,Arial,Helvetica;
+				font-size: 2.5em;
+				text-transform: lowercase;
+				color: rgb(190,50,38);
+				text-shadow: 1px 2px 3px rgb(102,102,102);
+			}
+
+article h2 {
+   font-size: 1.3em;
+   font-weight: bold;
+   text-align: center;
+   font-family: ASongForJenniferRegular,Arial,Helvetica;
+   text-shadow: 10px 0px 17px white,
+                -10px 0px 17px white;
+   margin-bottom: 15px;
+}
+
+#orderButton {
+   margin: 0 auto;
+   font-family: ASongForJenniferRegular,Arial,Helvetica;
+   font-size: 24px;
+   top: 15px;
+   -webkit-appearance: none;
+   display: inline-block;
+}
+
+label		{	display: block; }

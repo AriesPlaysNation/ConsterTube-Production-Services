@@ -1,0 +1,43 @@
+<!doctype html><!-- Author:      	YOUR NAME -->
+<html lang="en"><!-- Date Written: 	TODAY'S DATE -->
+<head>          <!-- Descripition:	My First JavaScript -->
+  <title>Chapter01B: Demo</title>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="chapter01.css" />
+    <script src="chapter01.js"></script>
+</head>
+<body>
+<div id="wrapper">
+<header>
+<h1>Insert meaningful heading here</h1>
+<h2>Insert a meaningful subheading here</h2>
+</header>
+<main>
+<h2>Insert another meaningful header here</h2>
+<p>A new, modern specification for JavaScript has finally arrived. ECMAScript 2015 was fifteen years in the making and significantly extends the capabilities and usability of JS. This talk explains why it took so long by exploring at some of the technical and political challenges invoked in updating the world's most widely used programming language.</p>
+<p>Allen Wirfs-Brock was the project editor of the ECMAScript 2015 Language Specification, the international standard that defines the latest version of the JavaScript programming language. He is an expert in programming languages and their implementation but is also an innovator and entrepreneur who founded two successful companies. When he's not working on the evolution of JavaScript, he is thinking, experimenting, and writing about the technical and societal implications of the rapidly emerging Ambient Computing Era.</p>
+<script>
+
+  document.write("<p>Speaker: Allen Wirfs-Brock</p>\n");
+  document.write("<p>JavaScript is currently "); // Note the space inside the closing quote
+  document.write(jsAge);
+  document.write(" years old.</p>\n"); // note the space inside the opening quote
+
+</script>
+</main>
+<footer>
+<p>&copy; <span id="year"></span>. Ivy Tech Community College Northeast.</p>
+</footer>
+</div><!-- wrapper -->
+<script>
+
+  // this section calls the function when the event "page load" occurs
+    if(window.addEventListener){
+        window.addEventListener("load", insertContent, false);
+    } else if (window.attachEvent){
+        window.attachEvent("onload", insertContent());
+    } // END IF ADDEVENTLISTENER
+
+</script>
+</body>
+</html>

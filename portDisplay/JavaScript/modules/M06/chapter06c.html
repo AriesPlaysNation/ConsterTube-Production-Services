@@ -1,0 +1,42 @@
+<!doctype html>				<!--	Author:		YOUR NAME      -->
+<html lang="en">			<!--	Date:		TODAY'S DATE              -->
+<head>						<!-- 	Filename	chapter06c.html       -->					
+   <meta charset="utf-8" />	<!-- Description:	Updating assoc fields -->
+   <meta name="viewport" content="width=page-width, initial-scale=1.0">
+   <title>Chapter06C - Updating Associated Fields</title>
+   <link rel="stylesheet" href="chapter06c.css" />
+      <script src="modernizr.custom.65897.js"></script>
+</head>
+<body>
+<div id="wrapper">
+  <header>
+    <h1>Chapter06C</h1>
+  </header>
+  <article>
+   <h2>Automatically Updating Associated Fields</h2>
+   <form>
+         <fieldset id="message" class="checks">
+            <legend>Message</legend>
+            <label for="congrats"><input id="congrats"  name="msgType" type="radio" />
+            Congratulations!</label>
+            <label for="bday"><input id="bday"  name="msgType" type="radio" />
+            Happy Birthday!</label>
+            <label for="anniv"><input id="anniv"  name="msgType" type="radio" />
+            Happy Anniversary!</label>
+            <label for="love"><input id="love"  name="msgType" type="radio" />
+            I love you!</label>
+            <label for="custom"><input id="custom" name="msgType" type="radio" />
+            Custom message:</label>
+            <textarea 	id="customText" name="CustomText" rows=3 cols=55 
+						placeholder="Enter custom message here (max 250 characters)"></textarea>
+          </fieldset>
+         <p class="noFloat">
+            <button type="button" id="orderButton" title="For testing purposes, this is NOT a submit button">Submit</button>
+         </p>
+	</form>
+	</article>
+   <footer>&copy; 2019. Ivy Tech Community College Northeast.</footer>
+   <script src="chapter06c.js"></script>
+</div><!-- wrapper -->
+</body>
+</html>

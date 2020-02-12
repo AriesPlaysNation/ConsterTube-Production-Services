@@ -1,0 +1,67 @@
+/* External Style Sheet for Chapter08a and 08b */
+@import	url(fonts/belligerent.css);
+@import url(fonts/overlock.css);
+@import url(fonts/sappymugs.css);
+body		{	background-color: rgb(255,255,255);
+			font-family: 'OverlockRegular';
+		}
+h1			{	font: 2.3em BelligerentMadnessRegular,Arial, Helvetica, sans-serif; 
+				margin: -5px 0px 10px 0px;
+				text-shadow: 1px 1px 1px rgb(255,255,255);
+			}
+h2			{	font: 1.5em BelligerentMadnessRegular,Arial Helvetica, sans-serif; 
+				margin-top: 0px;
+				text-shadow: 1px 1px 1px rgb(255,255,255);
+				clear: right;
+			}
+h3:first-of-type {	margin-top: 30px;}
+#wrapper	{	width:900px;
+				border:4px solid rgb(0,102,153);
+				padding:20px;
+				margin:auto;
+			}
+hr		{	color: rgb(0,102,153); }
+article	{	background-color: rgba(153,204,204,0.5);
+			color: rgb(0,0,0);
+			padding: 10px;
+			border-radius: 7px;
+		}
+li,p 	{
+			margin-top:20px;
+			font: 1em "Courier New", Courier, monospace;
+			color: rgb(0,0,0);
+			text-shadow: 1px 1px 1px rgb(255,255,255);
+		}
+li		{	margin-top: 0px;
+			margin-bottom: 0px;
+		}
+pre		{	font: 1em "Courier New",Courier,monospace;
+			margin: 10px;
+			padding: 15px; 
+			background-color: rgb(255,255,255);
+			color: rgb(0,0,255);
+			width: 50%;
+			border: 1px dotted rgb(0,0,0);
+		}
+footer	{	margin-top: 20px; 
+		}
+
+code		{	font-weight: bold; }
+
+.str p	{	font: 1.2em 'OverlockRegular'; 
+			margin: 0px;
+			
+		}
+.array,
+.regEx	{	font: 4em 'SappyMugs';
+			float: right;
+			clear: right;
+			margin-top: -40px;
+			text-shadow: 1px 1px rgb(255,255,255);
+		}
+.array	{	float: left;
+			clear: left;
+			margin-top: -20px;
+			margin-right: 10px;
+		}
+.noBtmMarg	{	margin-bottom: -20px; }

@@ -1,0 +1,103 @@
+<!doctype html>	<!-- Author:		Brad Botteron         -->
+<html lang="en"><!-- Date:			11/3/19      -->
+<head>			<!-- Description:	Dates and Objects -->
+ <title>Chapter07D - Dates and Objects</title>
+ <meta charset="utf-8" />
+ <link rel="stylesheet" href="chapter07d.css" />
+ <link rel="stylesheet" href="calendarStyle.css" />
+ <script src="basicCalendar.js"></script> 
+</head>
+<body>
+<div id="wrapper">
+<header>
+ <h1>Chapter07D</h1>
+</header>
+<article>
+<h2>Dates and Objects</h2>
+<p>Choose a month from the menu below to show a calendar of events for that month. </p>
+Choose a Month: 			<!-- Obtrusive JavaScript: Poor Practice -->
+<select id="month" name="month" >
+	<option value="0">--Select Month--</option><!-- Convert obtrusive JS to XBCEL -->
+	<option value="1">January</option>
+	<option value="2">February</option>
+	<option value="3">March</option>
+</select>
+</article>
+<aside>
+   <h2 id="calMonth">Monthly Events</h2>
+   <p id="calDisplay"></p>
+</aside>
+<main>
+<p>Study the code for the calendar to the right. It's not pretty, but it's efficient.</p>
+    <input type="button" id="btnPrevious" value="Previous Month" />
+    <input type="button" id="btnCurrent" value="Current Month" />
+    <input type="button" id="btnNext" value="Next Month" />
+</main>
+<figure id="calImage">
+<script>
+// Due to the manner in which the buildCal() function was written, we will use 
+// a document.write() method here. After reviewing the buildCal() function, can
+// you think of a way to eliminate the reliance on document.write() in this script?
+var monthPH = 1;
+function provideCal()
+{
+    var todaydate=new Date()
+    var curmonth=todaydate.getMonth()+monthPH //get current month (1-12)
+    var curyear=todaydate.getFullYear() //get current year
+    document.write(buildCal(curmonth ,curyear, "main", "month", "daysofweek", "days", 0));
+}
+
+var btnPrevious = document.getElementById("btnPrevious");
+var btnCurrent = document.getElementById("btnCurrent");
+var btnNext = document.getElementById("btnNext");
+var calImage = document.getElementById("calDisplay");
+
+if(btnPrevious.addEventListener)
+{
+    btnPrevious.addEventListener("click", function(){
+        if(monthPH == 1)
+        {
+            monthPH = 12;
+            calImage.innerHTML = provideCal();
+        } else {
+            monthPH -= 1;
+            calImage.innerHTML = provideCal();
+        }
+    }, false);
+    btnCurrent.addEventListener("click", function(){
+        monthPH = 1;
+        calImage.innerHTML = provideCal();
+    }, false);
+    btnNext.addEventListener("click", function(){
+        if(monthPH == 12)
+        {
+            monthPH = 1;
+            calImage.innerHTML = provideCal();
+        } else {
+            monthPH += 1;
+            calImage.innerHTML = provideCal();
+        }
+    }, false);
+} else if (window.attachEvent)
+{
+    btnPrevious.attachEvent("onclick", function(){
+
+    });
+    btnCurrent.attachEvent("onclick", function(){
+
+    });
+    btnNext.attachEvent("onclick", function(){
+
+    });
+}
+
+provideCal();
+
+</script>
+</figure>
+<footer>&copy; <span id="year">20XX</span>. Ivy Tech Community College Northeast. All rights reserved.
+</footer>
+</div>
+<script src="chapter07d.js"></script>
+</body>
+</html>

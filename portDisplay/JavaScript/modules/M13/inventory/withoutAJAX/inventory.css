@@ -1,0 +1,126 @@
+/*  Stylesheet for Chapter 30 demo scripts */
+
+@import url(/fonts/hvdbodedo.css); 
+@import url(/fonts/brawler.css);    
+
+#wrapper {	width:950px;
+		border:4px solid rgb(0,102,153);
+		padding:20px;
+		margin:2.5em auto 20px auto;
+	} 
+		
+body	{	font: 1em BrawlerRegular, Times, serif; }
+		
+h1,h2	{	margin-top: 10px; 
+		margin-bottom: 5px;
+	}
+
+h1	{ 	font: 2em hvdBodedoMedium,Arial,Helvetica,sans-serif;
+		margin-top: 0px;
+		color: rgb(0,102,153);
+	}
+h2	{ 	font: 1.2em hvdBodedoMedium, Helvetica, sans-serif; }
+h3	{	font-size: 0.95em; }
+
+span.h3 {	margin: 10px 0px 0px 0px;
+		font-weight: bold;
+		font-size: 1.1em;
+		display: block;
+	}
+
+
+p,li	{	font: 0.9em BrawlerRegular;
+		padding: 5px;
+	}
+
+ul 	{	list-style-type: none;
+	}
+
+
+pre	{	margin-left: 50px;
+		padding: 20px;
+		width: 450px;
+		border: 1px solid rgb(0,0,0);
+		background-color: rgb(222,222,222);
+		box-shadow: 4px 5px 5px rgb(51,51,51);
+		border-radius: 20px;
+	}
+
+article	{	border: 2px solid rgb(102,102,102);
+		background-color: rgb(204,204,204);
+		box-shadow: 3px 3px 3px rgb(51,51,51);
+		padding: 10px;
+		font: 1.4em Calibri,Helvetica,sanserif;
+		margin-bottom: 20px;
+		margin-top: 20px;
+	}
+footer	{	font: 0.8em "Calibri, Helvetica, sanserif"; 
+		margin-top: 20px;
+		font-style: italic;
+		text-align: center;
+		clear: both;
+	}
+
+table	{	border: 2px solid rgb(0,0,85);
+		box-shadow: 1px 1px 1px rgb(51,51,51);
+		margin: 30px;
+	}
+
+/*td	{	border: 1px solid rgb(0,0,170); } */
+td,th	{	border-bottom: 1px solid rgb(0,0,0); }
+th	{	padding-right: 25px; }
+
+code	{	font-size: 1.3em;
+	}
+form	{	margin: 30px 0px; }
+
+.single	{	margin: 0px; }
+
+.collapse {	border-collapse: collapse; }
+.centered {	text-align: center; }
+.shaded	  {	background-color: rgb(204,204,204); }
+.deleted  {	list-style-type: disc;
+		margin-top: 0px;
+		margin-bottom: 0px;
+	  }
+.lpad	  {	padding-left: 15px; }
+.rpad	  {	text-align: right;
+		padding-right: 25px;
+	  }
+
+fieldset	{	margin: 20px 0px; }
+
+input		{	display: block;
+			float: left;
+		}
+
+.radio		{	display: inline;
+			clear: both;
+		}
+
+.oneForty	{	width: 140px;
+			display: block;
+			float: left;
+		}
+.oneTen		{	width: 110px; 
+			display: block;
+			float: left;
+		}
+.eighty		{	width: 80px; 
+			display: block;
+			float: left;
+		}
+
+p		{	clear: both; }
+
+input[name="reset"],
+input[name="unit"],
+input[name="submit"]
+		{	display: inline;
+			margin-right: 20px;
+		}
+form p		{	line-height: 200%; }
+
+#step1		{	background-color: rgb(250,218,221); }
+#step2		{	background-color: rgb(231,255,231); }
+#step3		{	background-color: rgb(222,244,255); }

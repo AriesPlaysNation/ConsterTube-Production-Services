@@ -1,0 +1,53 @@
+<!doctype html> <!-- Author:		YOUR NAME           Brad Botteron-->
+<html lang="en"><!-- Date Written:	TODAY'S DATE        10/25/19-->
+<head>		<!-- Description:	EXAM01 MIDTERM -->
+ <title>Exam 1</title>
+ <meta charset="utf-8" />
+ <meta name="description"	content="SDEV 250 Exam 1" />
+ <meta name="author"		content="Barry J. Sullens" />
+ <link rel="stylesheet"		href="exam01.css" /> 
+</head>		  <!-- YOU ARE ONLY ALLOWED TO MAKE THREE CHANGES TO THIS DOCUMENT   -->
+<body>		  <!-- 1. Change the comments above.                                 -->
+<div id="wrapper"><!-- 2. Make the form allow YOUR JavaScript to perform validation. -->
+<main>		  <!-- 3. Prevent the ".submit() is not a function" error.           -->
+  <h1>SDEV 250: Exam 1</h1> 
+  <p>This exam will test you on the following client-side scripting concepts:</p>
+  <ul class="twoColumn">
+ 	<li>functions</li>
+ 	<li>arrays</li>
+ 	<li>loops</li>
+ 	<li>DOM manipulation</li>
+ 	<li>data validation</li>
+ 	<li>exception handling</li>
+ 	<li>event listeners</li>
+  </ul>
+</main>
+<form action="exam01.php" method="post">
+<h2>School of Information Technology Membership Form</h2>
+<p id="errorMsg"></p>
+<fieldset id="left">
+ <legend>Contact Info</legend>
+ <p><span class="grid3">Name</span>
+    <span class="grid1"><input type="text" name="fname" placeholder="First Name" size="15" maxlength="25" autofocus /></span>
+    <span class="grid1"><input type="text" name="lname" placeholder="Last Name" size="15" maxlength="25" /></span>
+ </p>
+ <p><span class="grid3">eMail</span>
+    <span class="grid2"><input type="email" name="email" placeholder="user@domain.com" size="35" /></span>
+ </p>
+ <p><span class="grid3">Age</span>
+    <span class="grid2"><input type="number" name="age"  /></span>
+ </p> 
+</fieldset>
+<fieldset id="right">
+ <legend>Programs</legend>
+ <p class="twoColumn" id="progList"></p>
+</fieldset>
+<p id="submit"><input type="submit" name="submitBtn" value="Submit" /></p>
+</form>
+<footer>
+  <p>&copy; <span id="copyright">20XX</span>. Ivy Tech Community College. All rights reserved.</p>
+</footer>
+</div><!-- wrapper -->
+<script src="exam01.js"></script>
+</body>
+</html>

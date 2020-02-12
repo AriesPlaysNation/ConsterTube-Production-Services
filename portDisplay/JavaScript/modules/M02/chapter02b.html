@@ -1,0 +1,42 @@
+<!doctype html>		<!-- Author:		YOUR NAME        -->
+<html>			<!-- Date Written:	TODAY'S DATE       -->
+<head>			<!-- Description:	Working with Data Types -->
+  <title>02B - Data Types</title>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="chapter02.css" />
+</head>
+<body>
+<div id="wrapper">
+<h1>Data Types</h1>
+<main>
+<article>
+<h2>JavaScript is Loosely Typed</h2>
+<p>A strongly typed language is also known as statically typed, because data types do not change after they have been declared. Programming languages that do not require you to declare the data types of variables are called loosely typed or duck typed programming languages. A loosely typed language is also known as dynamically typed, because data types can change after they have been declared. JavaScript is a loosely typed programming language. In JavaScript, you are not required to declare the data type of variables and, in fact, are not allowed to do so. Instead, a JavaScript interpreter automatically determines what type of data is stored in a variable and assigns the variable's data type accordingly.</p>
+<p>The following example shows how a variable's data type changes automatically each time the variable is assigned a new literal value. View the source for details.</p>
+<ul class="data">
+  <script>
+    var diffTypes = "Hellow World"; // String
+    document.write("\n<li> " + diffTypes + "</li>\n");
+
+    diffTypes = 8; // Integer
+    document.write("<li> " + diffTypes + "</li>\n");
+
+    diffTypes = 5.328; // Floating-point number
+    document.write("<li> " + diffTypes + "</li>\n");
+
+    diffTypes = true; // Boolean
+    document.write("<li> " + diffTypes + "</li>\n");
+
+    diffTypes = null; // NULL
+    document.write("<li> " + diffTypes + "</li>\n");
+  </script>
+</ul>
+</article>
+</main>
+<footer>
+<p>Some text taken from Vodnik/Gosselin textbook.</p>
+<p>&copy; 2019. Ivy Tech Community College. </p>
+</footer>
+</div><!-- wrapper -->
+</body>
+</html>
