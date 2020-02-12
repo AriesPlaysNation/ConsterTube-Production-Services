@@ -27,17 +27,15 @@ function addTableContent()
         img.src = "img/dir.gif";
         th.appendChild(img);
         tr.appendChild(th);
-        th2.appendChild(a);
         var text = document.createTextNode(courses[k]);
-        th2.appendChild(text);
+        a.appendChild(text);
+        th2.appendChild(a);
         tr.appendChild(th2);
         th3.innerHTML = "-";
         tr.appendChild(th3);
         k++;
         table.appendChild(tr);
-        console.log("ran through loop " + i + " times");
     }
-    console.log("resetting k to 0");
     k = 0;
 
 }
