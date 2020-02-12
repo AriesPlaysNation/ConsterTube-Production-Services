@@ -4,13 +4,14 @@ Date Written:       2/11/2020
 
 function addTableContent()
 {
-    var i = 2;
     var table = document.getElementById("tableContent");
-    var row = table.insertRow(i);
-    var cell1 = row.insertCell(0);
-    cell1.class = "tableIcons";
-    cell1.innerHTML = "ch";
-
+    var row = document.createElement("tr");
+    var th = document.createElement("th");
+    var text = document.createTextNode("text");
+    text.class = "tableIcons";
+    th.appendChild(text);
+    row.appendChild(th);
+    table.appendChild(row);
 }
 
 function init()

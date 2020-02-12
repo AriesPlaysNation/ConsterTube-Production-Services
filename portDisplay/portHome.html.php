@@ -19,7 +19,7 @@ require ("htmlHead.inc");
         </th>
     </tr>
 
-    <tr id="tableContent"></tr>
+    <tbody id="tableContent"></tbody>
 
     <tr class="indexBreakRow">
         <th colspan="3">
