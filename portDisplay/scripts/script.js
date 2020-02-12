@@ -1,21 +1,25 @@
 /* Author:          Brad Botteron
 Date Written:       2/11/2020
  */
+var levels = 0;
 
 function addTableContent()
 {
     var table = document.getElementById("tableContent");
-    var row = document.createElement("tr");
-    var th = document.createElement("th");
-    var text = document.createTextNode("text");
-    text.class = "tableIcons";
-    th.appendChild(text);
-    row.appendChild(th);
-    table.appendChild(row);
+
+}
+
+function getPageDir()
+{
+    var loc = window.location.pathname;
+    var dir = loc.substring(0,loc.lastIndexOf("\\"));
+    var directory = document.getElementById("directory");
+    directory.innerHTML = directory;
 }
 
 function init()
 {
+    getPageDir();
     addTableContent();
 }
 

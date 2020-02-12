@@ -7,6 +7,10 @@ $title = "Portfolio Home Page";
 require ("htmlHead.inc");
 ?>
 
+    <header>
+        <h1>Index of <span id="directory"></h1>
+    </header>
+
 <table id="indexList">
     <tr class="tableHeader">
         <th class="tableIcons">&nbsp;</th>

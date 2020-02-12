@@ -14,10 +14,5 @@ echo "\t<link rel='stylesheet' href='css/portStyle.css'";
 echo "</head>\n";
 echo "<body>\n";
 echo "<div id=\"wrapper\">\n";
-echo <<<heredoc
-<header>
-    <h1>Index of $path</h1>
-</header>
-heredoc;
 
 ?>
