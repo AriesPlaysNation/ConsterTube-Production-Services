@@ -5,7 +5,13 @@ Date Written:       2/11/2020
 function addTableContent()
 {
     var table = document.getElementById("tableContent");
-    table.innerHTML = "<tr><th>Content Here!!</th></tr>";
+    var tr = document.createElement("tr");
+    var th = document.createElement("th");
+    var text = document.createTextNode("content here!!");
+
+    th.appendChild(text);
+    tr.appendChild(th);
+    table.appendChild(th);
 }
 
 function init()
