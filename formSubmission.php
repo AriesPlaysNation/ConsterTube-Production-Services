@@ -13,7 +13,7 @@ mail($to, $email_subject, $email_body, $headers);
 $displayString = "<h1>Thank you for submitting your information, " . $firstName . " " . $lastName . "!</h1><br>";
 $displayString .= "<h2>We will get back to you within 48 hours.</h2><br>";
 $displayString .= "<p>Look out in your inbox and text messages!</p><br>";
-$displayString .= "Go back <a href='index.html' style='background-color: #676EFF'>home</a> here.<br><br><br>";
+$displayString .= "Go back <a href='lab01.html' style='background-color: #676EFF'>home</a> here.<br><br><br>";
 $displayString .= "Add <a href='mailto: conster954@gmail.com' style='background-color: #676EFF'>conster954@gmail.com</a> to your email list<br><br><br>";
 $displayString .= "Add <a href='mailto: bradbotteron13@gmail.com' style='background-color: #676EFF'>bradbotteron13@gmail.com</a> to your email list<br><br><br>";
 $displayString .= "Verify all information below is correct<br><br><br>";
