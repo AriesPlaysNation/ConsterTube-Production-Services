@@ -15,3 +15,17 @@
     border: .5px solid black;
     border-radius: 15%;
 }
+
+footer
+{
+    border: .5px solid black;
+    display: inline;
+    text-align: center;
+    font-size: .75em;
+    padding: 5px;
+    margin: 5px;
+    position: absolute;
+    bottom: 0;
+    width: 90%;
+    color: red;
+}
