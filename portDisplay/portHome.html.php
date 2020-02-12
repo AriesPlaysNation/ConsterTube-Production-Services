@@ -8,7 +8,7 @@ require ("htmlHead.inc");
 ?>
 
     <header>
-        <h1>Index of <span id="directory"></h1>
+        <h1>Index of <div id="directory"></h1>
     </header>
 
 <table id="indexList">
