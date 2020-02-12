@@ -30,7 +30,9 @@ function addTableContent()
         tr.appendChild(th3);
         i++;
         table.appendChild(tr);
+        console.log("ran through loop " + i + " times");
     }
+    console.log("resetting i to 0");
     i = 0;
 
 }
