@@ -4,7 +4,7 @@ Date Written:       2/11/2020
 var loc = window.location.pathname;
 var index = 0;
 var k = 0;
-var img = "img/dir.gif";
+var imagesrc = "img/dir.gif";
 var courses = ["JavaScript", "PHP"];
 
 function addTableContent()
@@ -22,7 +22,7 @@ function addTableContent()
         var th3 = document.createElement("th");
         th.class = "tableIcons";
         var img = document.createElement("img");
-        img.src = "img/dir.gif";
+        img.src = imagesrc;
         th.appendChild(img);
         tr.appendChild(th);
         var text = document.createTextNode(courses[k]);
