@@ -12,7 +12,7 @@ function addTableContent()
 function getPageDir()
 {
     var loc = window.location.pathname;
-    var dir = loc.substring(0,loc.lastIndexOf("\\"));
+    var dir = loc.substring(0,loc.lastIndexOf("/"));
     var directory = document.getElementById("directory");
     directory.innerHTML = dir;
 }
