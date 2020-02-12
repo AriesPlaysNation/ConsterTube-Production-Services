@@ -1,48 +1,36 @@
-<!-- Author:            Brad Botteron
-    Date Written:       11/3/19
-    Desc:               Chapter 7 Home Page html -->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Chapter 07 Home Page</title>
-    <link rel="stylesheet" href="chapter07.css" />
+    <title>Module 09</title>
+    <link rel="stylesheet" href="../../../css/portStyle.css">
 </head>
 <body>
-
 <div id="wrapper">
 
-    <header>
-        <h1><span id="name"></span> Lab: Working with Objects</h1>
-    </header>
+    <div class="projectDisplay">
+        <h1>Module 09</h1>
+        <hr>
 
-    <article>
+        <h1 class="h1Display">Demo Assignments</h1>
+        <ul class="ulDisplay">
+            <li><a href="chapter07a.html">Chapter 07 A</a></li>
+            <li><a href="chapter07b.html">Chapter 07 B</a></li>
+            <li><a href="chapter07c.html">Chapter 07 C</a></li>
+            <li><a href="chapter07d.html">Chapter 07 D</a></li>
+            <li><a href="chapter07e.html">Chapter 07 E</a></li>
+        </ul>
 
-        <ol>
-            <li><a href="chapter07a.html">chapter07a.html</a></li>
-            <li><a href="chapter07b.html">chapter07b.html</a></li>
-            <li><a href="chapter07c.html">chapter07c.html</a></li>
-            <li><a href="chapter07d.html">chapter07d.html</a></li>
-            <li><a href="chapter07e.html">chapter07e.html</a></li>
-        </ol>
-
-    </article>
-
-
-
-<footer>&copy; <span id="year">20XX</span>. Ivy Tech Community College Northeast. All rights reserved.
-</footer>
-
+        <hr>
+        <a class="tableFooter" href="../../JavaScript.html.php">Go back</a>
+    </div>
 </div>
-
+<footer>|| &copy 2019-<span id="year"></span> Brad Botteron Portfolio Display of Web Foundations Using JavaScript ||</footer>
 <script>
-    var myName = window.location.pathname.split("/");
-    nameContainer = document.getElementById("name");
-    nameContainer.innerHTML = myName[1];
+    "use strict";
+    var div = document.getElementById("year");
+    var date = new Date().getFullYear();
+    div.innerHTML = date;
 </script>
-
-<script src="chapter07.js"></script>
-
 </body>
 </html>
