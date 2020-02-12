@@ -8,6 +8,11 @@
     font-family: "Lemonada", cursive;
 }
 
+header
+{
+    text-align: center;
+}
+
 h1
 {
     font-size: 1.5em;

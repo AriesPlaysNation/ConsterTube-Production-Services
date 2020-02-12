@@ -1,7 +1,8 @@
 /* Author:          Brad Botteron
 Date Written:       2/11/2020
  */
-var levels = 0;
+var loc = window.location.pathname;
+var index = 0;
 
 function addTableContent()
 {
@@ -11,10 +12,8 @@ function addTableContent()
 
 function getPageDir()
 {
-    var loc = window.location.pathname;
-    var dir = loc.substring(0,loc.lastIndexOf("/"));
     var directory = document.getElementById("directory");
-    directory.innerHTML = dir;
+    directory.innerHTML = loc.substring(index, loc.lastIndexOf("/"));
 }
 
 function init()
