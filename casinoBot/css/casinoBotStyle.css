@@ -34,6 +34,7 @@ footer
     border: .5px solid white;
     padding: 5px;
     margin: 5px;
+    text-align: center;
 }
 
 a:link, a:visited, a:active, a:hover
@@ -46,5 +47,4 @@ a:link, a:visited, a:active, a:hover
 {
     display: inline;
     margin: 0 5%;
-
 }
