@@ -5,7 +5,7 @@
 
 *
 {
-    background-color: darkslategray;
+    background-color: azure;
     font-family: "Lemonada", cursive;
 }
 
@@ -31,12 +31,6 @@ tr.indexBreakRow
     height: 1px;
     background: black;
 }
-
-body
-{
-    background: azure;
-}
-
 
 footer
 {
