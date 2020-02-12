@@ -5,7 +5,6 @@
 
 *
 {
-    background-color: azure;
     font-family: "Lemonada", cursive;
 }
 
@@ -19,7 +18,7 @@ table
     margin: 10px auto;
     width: 60%;
     min-width: 460px;
-    background: white;
+    background: azure;
     padding: 20px;
     border-radius: 15px;
     text-align: center;
@@ -34,7 +33,7 @@ tr.indexBreakRow
 
 footer
 {
-    border: .5px solid white;
+    border: .5px solid black;
     display: inline;
     text-align: center;
     font-size: .75em;
