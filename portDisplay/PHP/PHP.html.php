@@ -2,9 +2,9 @@
 /*  Author:             Brad Botteron
     Date Written:       2/11/20
 */
-$title = "Portfolio Home Page";
+$title = "Portfolio PHP Page";
 
-require("../htmlHead.inc");
+require("htmlPHPHead.inc");
 ?>
 
 <header>
@@ -37,4 +37,4 @@ require("../htmlHead.inc");
     </tr>
 </table>
 
-<?php require("../htmlFooter.inc");?>
+<?php require("htmlPHPFooter.inc");?>
