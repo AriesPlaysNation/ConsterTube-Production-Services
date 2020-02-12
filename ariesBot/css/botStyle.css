@@ -47,4 +47,5 @@ a:link, a:visited, a:active, a:hover
 {
     margin: 0 5%;
     display: inline;
+    text-align: center;
 }
