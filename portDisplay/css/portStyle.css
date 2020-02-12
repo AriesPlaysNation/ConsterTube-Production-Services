@@ -19,7 +19,7 @@ table
     margin: 10px auto;
     width: 60%;
     min-width: 460px;
-    background: azure;
+    background: white;
     padding: 20px;
     border-radius: 15px;
     text-align: center;
@@ -34,7 +34,7 @@ tr.indexBreakRow
 
 footer
 {
-    border: .5px solid azure;
+    border: .5px solid white;
     display: inline;
     text-align: center;
     font-size: .75em;

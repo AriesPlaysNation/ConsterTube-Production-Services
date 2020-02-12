@@ -13,6 +13,11 @@ require ("htmlHead.inc");
         <th class="tableName">Directory</th>
         <th class="tableModified">Last Modified</th>
     </tr>
+    <tr class="indexBreakRow">
+        <th colspan="3">
+            <hr>
+        </th>
+    </tr>
 </table>
 
 <?php require ("htmlFooter.inc");?>
