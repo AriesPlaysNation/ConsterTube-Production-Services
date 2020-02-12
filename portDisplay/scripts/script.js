@@ -3,7 +3,7 @@ Date Written:       2/11/2020
  */
 var loc = window.location.pathname;
 var index = 0;
-var i = 0;
+var k = 0;
 var img = "img/dir.gif";
 var courses = ["JavaScript", "PHP"];
 var modules = ["Module 01", "Module 02", "Module 03", "Module 04", "Module 05", "Module 06", "Module 07", "Module 08",
@@ -24,16 +24,16 @@ function addTableContent()
         img.src = "img/dir.gif";
         th.appendChild(img);
         tr.appendChild(th);
-        th2.innerHTML = courses[0];
+        th2.innerHTML = courses[k];
         tr.appendChild(th2);
         th3.innerHTML = "-";
         tr.appendChild(th3);
-        i++;
+        k++;
         table.appendChild(tr);
         console.log("ran through loop " + i + " times");
     }
-    console.log("resetting i to 0");
-    i = 0;
+    console.log("resetting k to 0");
+    k = 0;
 
 }
 
