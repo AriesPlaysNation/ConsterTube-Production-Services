@@ -25,7 +25,7 @@ require("htmlJSHead.inc");
 
     <tr>
         <th class="tableIcons"><img src="../img/back.gif"></th>
-        <th class="tableName"><a href="<?php echo dirname(); ?>">Parent Directory</a></th>
+        <th class="tableName"><a href="../portHome.html.php">Parent Directory</a></th>
     </tr>
 
     <tbody id="tableContent"></tbody>
