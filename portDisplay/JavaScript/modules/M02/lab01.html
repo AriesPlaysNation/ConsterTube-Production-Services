@@ -1,0 +1,76 @@
+<!-- Brad Botteron
+SDEV 250
+M02 Assignment
+9/10/19
+Embedded javascript since it's within the same file??-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>M02 Lab Work Order</title>
+    <link rel="stylesheet" href="lab02.css" />
+
+    <script>
+        function addByLines() // addByLines for ensuring calls of seperate functions with parameters
+        {
+            // Hard coded parameters
+            date(1995);
+            stringConcat("String ", "Concatination");
+            compareNums(3, 5);
+        }
+
+        function date(number) { // Configures my age with the year and my birth year hard coded -> arithmetic operator example
+            var year = 2019;
+            var age = year -= number;
+            document.getElementById("byLine1").innerHTML = "I am " + age + " years old!";
+        }
+
+        function stringConcat(string1, string2){ // String Concatination example
+            document.getElementById("byLine2").innerHTML = string1 + string2;
+        }
+
+        function compareNums(num1, num2){ // comparison operator example
+            num1 < num2 ? result = num1 + " is less than " + num2 : result = num2 + " is less than " + num1;
+            document.getElementById("byLine3").innerHTML = result;
+        }
+    </script>
+</head>
+<body>
+<div id="wrapper">
+
+    <h1 id="name"> My Name is: </h1> <br>
+    <p>
+        <button id="changeName" type="button">Who am I?</button>
+    </p>
+
+    <!-- byLine placeholders inside paragraph, no unbalance tree since they are within the p tag -->
+    <p id="byLine1"></p>
+    <p id="byLine2"></p>
+    <p id="byLine3"></p>
+
+</div> <!-- Wrapper close -->
+<script>
+    var nameButton = document.getElementById("changeName"); // Establish id
+    nameButton.addEventListener("click", function() { // anonymous function to change the intial "header" to my name
+        document.getElementById("name").innerHTML = "Brad Botteron"; // Change to id
+    });
+
+    // Event listener to initiate javascript
+    if(window.addEventListener)
+    {
+        window.addEventListener("load", addByLines, false);
+    } else if (window.attachEvent)
+    {
+        window.attachEvent("onload", addByLines());
+    }
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
