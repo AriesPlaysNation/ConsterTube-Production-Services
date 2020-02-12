@@ -25,7 +25,7 @@ require ("htmlHead.inc");
 
     <tr>
         <th class="tableIcons"><img src="img/back.gif"></th>
-        <th><a href="<? echo dirname(); ?>">Parent Directory</a></th>
+        <th><a href="<? dirname(); ?>">Parent Directory</a></th>
     </tr>
 
     <tbody id="tableContent"></tbody>
