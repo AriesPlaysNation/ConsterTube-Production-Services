@@ -28,7 +28,8 @@ function addTableContent()
         th.appendChild(img);
         tr.appendChild(th);
         th2.appendChild(a);
-        th2.innerHTML = courses[k];
+        var text = document.createTextNode(courses[k]);
+        th2.appendChild(text);
         tr.appendChild(th2);
         th3.innerHTML = "-";
         tr.appendChild(th3);
