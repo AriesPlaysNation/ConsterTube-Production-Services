@@ -17,7 +17,7 @@ function addTableContent()
     for (var i = 0; i < courses.length; i++)
     {
         var a = document.createElement("a");
-        a.href = loc.substring(index, loc.lastIndexOf("/")) + "/" + courses[k] + ".html.php";
+        a.href = loc.substring(index, loc.lastIndexOf("/")) + "/JavaScript/" + courses[k] + ".html.php";
         var tr = document.createElement("tr");
         var th = document.createElement("th");
         var th2 = document.createElement("th");
