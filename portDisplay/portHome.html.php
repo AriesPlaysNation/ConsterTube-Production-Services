@@ -18,6 +18,12 @@ require ("htmlHead.inc");
             <hr>
         </th>
     </tr>
+    <div id="tableContent"></div>
+    <tr class="indexBreakRow">
+        <th colspan="3">
+            <hr>
+        </th>
+    </tr>
 </table>
 
 <?php require ("htmlFooter.inc");?>
