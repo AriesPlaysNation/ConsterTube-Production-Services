@@ -23,6 +23,11 @@ require ("htmlHead.inc");
         </th>
     </tr>
 
+    <tr>
+        <th class="tableIcons"><img src="img/back.gif"></th>
+        <th><a href="<? echo dirname(dir); ?>">Parent Directory</a></th>
+    </tr>
+
     <tbody id="tableContent"></tbody>
 
     <tr class="indexBreakRow">
@@ -32,4 +37,7 @@ require ("htmlHead.inc");
     </tr>
 </table>
 
+<script>
+    var dir = window.location.pathname;
+</script>
 <?php require ("htmlFooter.inc");?>
