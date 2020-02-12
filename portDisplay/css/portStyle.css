@@ -13,6 +13,11 @@ h1
     font-size: 1.5em;
 }
 
+.tableIcons
+{
+    width: 25px;
+}
+
 table
 {
     margin: 10px auto;
