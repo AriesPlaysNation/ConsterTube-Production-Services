@@ -1,0 +1,46 @@
+<!doctype html> <!-- Author:	Brad Botteron           -->
+<html lang="en"><!-- Date:	12/1/19        -->
+<head>		<!-- Desc:	Home page for Lab13 -->
+    <title>LAB 13</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="lab13.css" />
+</head>
+<body>
+<div id="wrapper">
+    <header>
+        <h1>Lab13 - Using AJAX</h1>
+        <h2>Query a database with no ACTION, SUBMIT button, or page refresh.</h2>
+    </header>
+    <article>
+        <p>To begin with, only the first "combo box" is populated with any values: <strong>CSCI</strong>, <strong>DBMS</strong>, <strong>INFM</strong>, and <strong>SDEV</strong>. These are hard coded into the HTML for this page. The options for the second combo box are not populated until the user chooses one of the available programs. As soon as the user changes the selection for the program field, AJAX queries the database (behind the scenes) for all courses in that program and populates the second combo box with the results. Change the program field selection again, and the Course options change as well. Once the user selects a specific course from the second "combo box," AJAX performs another behind the scenes query to display the course description. At no point does the user have to click a "submit" button or refresh this page. The beauty of AJAX is at your disposal. The effect is a smoother, more transparent user experience that more closely replicates the behavior of a desktop application.</p>
+    </article>
+    <form id="ajaxExample">
+        <fieldset>
+            <legend>Program</legend>
+            <select id="program" name="program">
+                <option value="" disabled="disabled" selected>--Choose One--</option>
+                <option value="CSCI">CSCI</option>
+                <option value="DBMS">DBMS</option>
+                <option value="INFM">INFM</option>
+                <option value="SDEV">SDEV</option>
+            </select>
+        </fieldset>
+        <fieldset id="ajaxFieldset">
+            <legend>Course</legend>
+            <select id="course" name="course">
+                <option>--Choose One--</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend>Description</legend>
+            <p id="catalog"></p>
+        </fieldset>
+    </form>
+    <footer><p>&copy; 2015-<span id="year"></span>. Ivy Tech Community College.</p></footer>
+</div>
+<script src="ajax-framework1.js"></script>
+<script src="copyright.js"></script>
+<script src="eventListeners.js"></script>
+</body>
+</html>
