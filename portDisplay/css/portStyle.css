@@ -35,6 +35,11 @@
     text-align: center;
 }
 
+.tableFooter
+{
+    font-size: .75em;
+}
+
 header
 {
     text-align: center;
