@@ -37,7 +37,8 @@ footer
 .contentSections
 {
     display: inline-block;
-    margin: 20px;
+    height: 150px;
+    margin: 5%;
     text-align: center;
     padding: 20px;
     border: solid 1px black;
