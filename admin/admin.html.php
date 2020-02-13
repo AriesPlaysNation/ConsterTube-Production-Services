@@ -12,6 +12,10 @@ require ("header.inc");
         <h2>Aries Discord Bot</h2><br>
         <a href="../ariesBot/home.html.php">Site</a>
     </span>
+    <span class="contentSections">
+        <h2>Casino Discord Bot</h2><br>
+        <a href="../casinoBot/home.html.php">Site</a>
+    </span>
 </div>
 
 <?php require ("footer.inc");?>
