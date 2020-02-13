@@ -40,10 +40,16 @@ footer
 .contentSections
 {
     display: inline-block;
+    background-color: azure;
     height: 150px;
     margin: 75px 5% 20px 5%;
     text-align: center;
     padding: 20px;
     border: solid 1px black;
     border-radius: 25%;
+}
+
+.contentSections > a , h2
+{
+    background-color: azure;
 }
