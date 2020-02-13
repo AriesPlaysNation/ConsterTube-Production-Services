@@ -20,6 +20,7 @@ footer
     border: .5px solid black;
     display: inline;
     text-align: center;
+    color: red;
     font-size: .75em;
     padding: 5px;
     margin: 5px;
@@ -27,7 +28,6 @@ footer
     bottom: 0;
     left: 0;
     right: 0;
-    color: red;
 }
 
 #columnContent
