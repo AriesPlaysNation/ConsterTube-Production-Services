@@ -49,7 +49,7 @@ footer
     border-radius: 25%;
 }
 
-.contentSections > a , h2
+.contentSections > *
 {
     background-color: azure;
 }
