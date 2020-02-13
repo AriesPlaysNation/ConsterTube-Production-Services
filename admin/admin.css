@@ -15,6 +15,11 @@
     border: .5px solid black;
 }
 
+.contentSections > h2, .contentSections > a
+{
+    background: azure;
+}
+
 footer
 {
     border: .5px solid black;
