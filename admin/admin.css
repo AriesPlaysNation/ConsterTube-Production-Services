@@ -36,7 +36,10 @@ footer
 
 .contentSections
 {
+    display: inline-block;
+    margin: 20px;
+    text-align: center;
     padding: 20px;
     border: solid 1px black;
-    border-radius: 25%; 
+    border-radius: 25%;
 }
