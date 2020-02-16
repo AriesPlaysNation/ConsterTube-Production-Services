@@ -30,6 +30,12 @@ require ("htmlHead.inc");
             <hr>
         </th>
     </tr>
+    <tr>
+        <th colspan="3">
+            <i>Disclaimer: I did not personally create 100% of the pure html and css content. However, all JavaScript and PHP are my own creations.
+            Any projects that involve the sql database are currently in the works as in these projects they were used on a private secured database.</i>
+        </th>
+    </tr>
 </table>
 
 <?php require ("htmlFooter.inc");?>
