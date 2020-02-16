@@ -5,7 +5,7 @@ var loc = window.location.pathname;
 var index = 0;
 var k = 0;
 var imagesrc = "img/dir.gif";
-var courses = ["JavaScript", "PHP"];
+var courses = ["JavaScript", "PHP(Still in development)"];
 
 function addTableContent()
 {
