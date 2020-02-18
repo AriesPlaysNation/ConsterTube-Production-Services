@@ -6,7 +6,7 @@
   #				before requiring this file.
 
     // Assign variables
-    $host     = "127.0.0.1";		// must use 127.0.0.1 with mysqli
+    $host     = "ssh.sullens.net";		// must use 127.0.0.1 with mysqli
     $uname    = "ajacks";	
     $pass     = "BR2wRtMSdh6ESHtY";
 
